@@ -1,0 +1,100 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763617599
+::res://__pycache__/::1763616806
+::res://addons/::1763616801
+::res://addons/gdscript2all/::1763616801
+customSaver.gd::GDScript::2899439318887106578::1761908245::0::1::::<>ResourceFormatSaver<><>0<>0<><>::
+plugin.cfg::TextFile::-1::1761908245::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript::3863014530075813205::1761908245::0::1::::gdscript2all_plugin<>EditorPlugin<><>0<>1<><>::
+README.md::TextFile::-1::1761908245::0::1::::<><><>0<>0<><>::
+script_converter_UI.gd::GDScript::189629711184694764::1761908245::0::1::::<>Control<><>0<>1<><>::
+script_converter_UI.tscn::PackedScene::3054554913014110175::1761908245::0::1::::<><><>0<>0<><>::res://addons/gdscript2all/script_list.gd<>res://addons/gdscript2all/script_converter_UI.gd
+script_list.gd::GDScript::6512876406764589706::1761908245::0::1::::<>ItemList<><>0<>1<><>::
+::res://addons/gdscript2all/converter/::1763616801
+::res://addons/gdscript2all/converter/libs/::1763616801
+::res://addons/gdscript2all/converter/libs/sly/::1763616801
+::res://addons/gdscript2all/converter/src/::1763616801
+::res://assets/::1763616801
+::res://assets/audio/::1763616801
+retro-coin-4-236671.mp3::AudioStreamMP3::5556760261702437071::1763559872::1763565217::1::::<><><>0<>0<>261fb02057b8cd7a66b1f7e23e553cdc<>res://.godot/imported/retro-coin-4-236671.mp3-1c2048c2a85db03489406f5e894806db.mp3str::
+Roblox Death Sound (Oof) - Sound Effect (HD).mp3::AudioStreamMP3::6342858623310725393::1763566572::1763566573::1::::<><><>0<>0<>539c7ba745958b4ff0523f6423d2a77e<>res://.godot/imported/Roblox Death Sound (Oof) - Sound Effect (HD).mp3-69fe0b3729c80a00e87d797f5ec43b6f.mp3str::
+::res://assets/cavetileset/::1763616801
+tileset16x16.png::CompressedTexture2D::2284546105785905288::1763548291::1763548292::1::::<><><>0<>0<>381fa56eb864e13a667f2e4507269329<>res://.godot/imported/tileset16x16.png-702affd917e4a0734edeb54f35b7e5e7.ctex::
+tileset160x160.png::CompressedTexture2D::3279756205992542941::1763548291::1763548292::1::::<><><>0<>0<>e5799148c79309cd315f0f5761499d7f<>res://.godot/imported/tileset160x160.png-9c03dd362081e13a3811840889877fdc.ctex::
+::res://assets/fonts/::1763616801
+LICENSE.txt::TextFile::-1::1763558905::0::1::::<><><>0<>0<><>::
+Minecraft.ttf::FontFile::272497122594072905::1763558614::1763558615::1::::<><><>0<>0<>cd63b8a2ca0b65ee97b8a440a6a5bf11<>res://.godot/imported/Minecraft.ttf-e1845dfc080db589cd29d952a380f38e.fontdata::
+PixelOperator8-Bold.ttf::FontFile::7960853504598665466::1763558906::1763558915::1::::<><><>0<>0<>1a8f12f3d02239bb0c67071feb3ebb3b<>res://.godot/imported/PixelOperator8-Bold.ttf-74faf550739674ad3170f08e646e0614.fontdata::
+PixelOperator8.ttf::FontFile::1468744947167349722::1763558906::1763558915::1::::<><><>0<>0<>3aca16448b3aaf9c5542e1088f6083e6<>res://.godot/imported/PixelOperator8.ttf-6f9f01766aff16f52046b880ffb8d367.fontdata::
+::res://assets/music/::1763616801
+time_for_adventure.mp3::AudioStreamMP3::6821006611173873239::1762951162::1763560551::1::::<><><>0<>0<>27349044a1ddce825ab5c09bf5ed9682<>res://.godot/imported/time_for_adventure.mp3-b8a49ae1cfc83b211be9d82e6e985655.mp3str::
+::res://assets/player/::1763616801
+Coupon by craftpix.png::CompressedTexture2D::564398345157565994::1763548291::1763548293::1::::<><><>0<>0<>a7b53bed3080447c4c8e4fba0dd4673c<>res://.godot/imported/Coupon by craftpix.png-8138eb32625a74432c6bf087362311ac.ctex::
+Font.txt::TextFile::-1::1763548291::0::1::::<><><>0<>0<><>::
+license.txt::TextFile::-1::1763548291::0::1::::<><><>0<>0<><>::
+::res://assets/player/1 Biker/::1763616801
+Biker_attack1.png::CompressedTexture2D::356812532115032168::1763548291::1763548292::1::::<><><>0<>0<>5760dea84c3bb7d4f7ef85efd40863a8<>res://.godot/imported/Biker_attack1.png-0b402d7b5ea24a9660b8422814ee1892.ctex::
+Biker_attack2.png::CompressedTexture2D::241825528339422046::1763548291::1763548292::1::::<><><>0<>0<>32481a22bb690765b342a777bc395e65<>res://.godot/imported/Biker_attack2.png-6b894d06193a5dac794f1430aabbb608.ctex::
+Biker_attack3.png::CompressedTexture2D::5811756148426675493::1763548291::1763548292::1::::<><><>0<>0<>649add5ff96fd14b1491703317b1e1b1<>res://.godot/imported/Biker_attack3.png-31ea36bae390595e81ce11c327972d96.ctex::
+Biker_climb.png::CompressedTexture2D::2656462728580049593::1763548291::1763548292::1::::<><><>0<>0<>04aa0a74d4391799a0fa5a554e2e4196<>res://.godot/imported/Biker_climb.png-0f5ef90f784eb37ca9709a5f0cfbd8c8.ctex::
+Biker_death.png::CompressedTexture2D::6535188826830937393::1763548291::1763548292::1::::<><><>0<>0<>a498ea8e7ea4dab617f55cc6853d9a3d<>res://.godot/imported/Biker_death.png-282d5df1fc26d93d5937336d5bfbd128.ctex::
+Biker_doublejump.png::CompressedTexture2D::4033381627364506498::1763548291::1763548292::1::::<><><>0<>0<>df12c86ef4106bbf14899d7b6f95c6c8<>res://.godot/imported/Biker_doublejump.png-8856b2a07d19d6e7c4275a278e9a5612.ctex::
+Biker_hurt.png::CompressedTexture2D::8584457516440400689::1763548291::1763548292::1::::<><><>0<>0<>b7105035dec9b496077c2baa43ebefa6<>res://.godot/imported/Biker_hurt.png-cb5221c5f031ea2acdc8d92ed4074f8a.ctex::
+Biker_idle.png::CompressedTexture2D::6460950441689352630::1763548291::1763548292::1::::<><><>0<>0<>6e68bc086810f4304ec424880ba14558<>res://.godot/imported/Biker_idle.png-1e309d57a47ed6d055038c150dec53dc.ctex::
+Biker_jump.png::CompressedTexture2D::5664054588520338493::1763548291::1763548292::1::::<><><>0<>0<>d4afc0e5b46ee4267cdd378f2c505790<>res://.godot/imported/Biker_jump.png-86d78db6c036dc9bf636d7ca1505be2b.ctex::
+Biker_punch.png::CompressedTexture2D::7131815002275229618::1763548291::1763548292::1::::<><><>0<>0<>1c55fffaeb7e44caa56f3488e2d15050<>res://.godot/imported/Biker_punch.png-439a6e9ff3e6899613c7350be37d11c9.ctex::
+Biker_run.png::CompressedTexture2D::8518533070377098056::1763548291::1763548292::1::::<><><>0<>0<>50d8ea19a9b8ab545df7da123b5b55c9<>res://.godot/imported/Biker_run.png-42eaded1ad577343c9d8abf13be3537a.ctex::
+Biker_run_attack.png::CompressedTexture2D::1328491494507280653::1763548291::1763548292::1::::<><><>0<>0<>b9260c77bc9c7e65572b6bba913d9679<>res://.godot/imported/Biker_run_attack.png-07b51f4eff24ba8f051b81b7da2059f2.ctex::
+::res://assets/player/2 Punk/::1763616801
+Punk_attack1.png::CompressedTexture2D::5173607296476214512::1763548291::1763548292::1::::<><><>0<>0<>fb80952e203291c5679aad4c8ad72513<>res://.godot/imported/Punk_attack1.png-877a2b972147ba9a3c83ffe98dca2f16.ctex::
+Punk_attack2.png::CompressedTexture2D::7541273376331628329::1763548291::1763548292::1::::<><><>0<>0<>c6660fb110eaba46c924e56cea0efb3c<>res://.godot/imported/Punk_attack2.png-c45c896eb923e32572d1723006444c69.ctex::
+Punk_attack3.png::CompressedTexture2D::7530507254070034725::1763548291::1763548292::1::::<><><>0<>0<>335d41a67fd7541e064cec393bfb8404<>res://.godot/imported/Punk_attack3.png-49ae27fcb997d83fdbf746abc51a1057.ctex::
+Punk_climb.png::CompressedTexture2D::4648032280528591854::1763548291::1763548292::1::::<><><>0<>0<>244528bbb2682b0b6f7f08bcff4a9410<>res://.godot/imported/Punk_climb.png-2306704995b11b899122d76beca3fb7a.ctex::
+Punk_death.png::CompressedTexture2D::5337951516918679313::1763548291::1763548292::1::::<><><>0<>0<>d74c78cd5f265c25916dd125b29fabf2<>res://.godot/imported/Punk_death.png-f2b491d22d8e9782ea7b2fba41b6ac8e.ctex::
+Punk_doublejump.png::CompressedTexture2D::3947416718274285750::1763548291::1763548292::1::::<><><>0<>0<>036c8139ad6b6d29900f1f1f030a4958<>res://.godot/imported/Punk_doublejump.png-e3af93cffb84064de9079e5017de6045.ctex::
+Punk_hurt.png::CompressedTexture2D::1344485096127478355::1763548291::1763548292::1::::<><><>0<>0<>b651b2305df8a8dc7e566d430aa8fe13<>res://.godot/imported/Punk_hurt.png-3138d08ecf64433cc1d8f0b5714cbc03.ctex::
+Punk_idle.png::CompressedTexture2D::2768096462844856526::1763548291::1763548292::1::::<><><>0<>0<>2258983243e74a9a1d059583010c9fec<>res://.godot/imported/Punk_idle.png-8ebaf5257233a510f9ff7503e417ffba.ctex::
+Punk_jump.png::CompressedTexture2D::2149750743013065530::1763548291::1763548292::1::::<><><>0<>0<>475144db4c4fb4416d8fab85d92b1dc5<>res://.godot/imported/Punk_jump.png-c01f2ef8cea1cff348c7f1800101ab88.ctex::
+Punk_punch.png::CompressedTexture2D::858380677619986160::1763548291::1763548292::1::::<><><>0<>0<>5433ae901f21934469d4ea86b8f0632e<>res://.godot/imported/Punk_punch.png-74d458c225ce4d5a13834307319d4af2.ctex::
+Punk_run.png::CompressedTexture2D::2866100998148857855::1763548291::1763548292::1::::<><><>0<>0<>c130cbcef8666be3bc658a54f47448ea<>res://.godot/imported/Punk_run.png-d376d3c5ff36d59d770a9061f0262e3e.ctex::
+Punk_run_attack.png::CompressedTexture2D::1362798583675337364::1763548291::1763548292::1::::<><><>0<>0<>c326c86b79d7d2c32df003e12ac3cda8<>res://.godot/imported/Punk_run_attack.png-20a4945e771d0221afc5618ad5d795e9.ctex::
+::res://assets/player/3 Cyborg/::1763616801
+Cyborg_attack1.png::CompressedTexture2D::5372598019970654429::1763548291::1763548292::1::::<><><>0<>0<>8bef503424bb696acaa2e086b87bae5e<>res://.godot/imported/Cyborg_attack1.png-31ca1599e45feba58d05811397acc265.ctex::
+Cyborg_attack2.png::CompressedTexture2D::8780150136576284121::1763548291::1763548292::1::::<><><>0<>0<>1512ce65ec69c1d3c4bc7e623f9417c4<>res://.godot/imported/Cyborg_attack2.png-e6bc806fb7b40020624b2acfcb751a4f.ctex::
+Cyborg_attack3.png::CompressedTexture2D::539410387508153159::1763548291::1763548292::1::::<><><>0<>0<>fe7affad4f7a3c298d4054e0ab75a04b<>res://.godot/imported/Cyborg_attack3.png-519086d9e0e4139ba2e8d2cb41ce507a.ctex::
+Cyborg_climb.png::CompressedTexture2D::8902693856227358220::1763548291::1763548292::1::::<><><>0<>0<>de5a69099327e8bff010c5c0724c8cb1<>res://.godot/imported/Cyborg_climb.png-dcf93bd2fb10faee34f9a0b73cb7e99a.ctex::
+Cyborg_death.png::CompressedTexture2D::5121980494145078492::1763548291::1763548292::1::::<><><>0<>0<>cada38e492b84684c44a5dff15103d14<>res://.godot/imported/Cyborg_death.png-aae1b5d4de7779ae994f0f26aeeb2850.ctex::
+Cyborg_doublejump.png::CompressedTexture2D::8296199406505380282::1763548291::1763548292::1::::<><><>0<>0<>2a708a722fda91a12cb62598f9edef70<>res://.godot/imported/Cyborg_doublejump.png-de991962d1ce28134a1fb41e38b62e0f.ctex::
+Cyborg_hurt.png::CompressedTexture2D::2885850884586786082::1763548291::1763548292::1::::<><><>0<>0<>4a938379d35f3e9fe2928f2890fb148c<>res://.godot/imported/Cyborg_hurt.png-0a0e6405308182f8c0804fa6e893f4fc.ctex::
+Cyborg_idle.png::CompressedTexture2D::8115318964576076083::1763548291::1763548292::1::::<><><>0<>0<>bab2720dbc7b02d34ea4bb99b9996f65<>res://.godot/imported/Cyborg_idle.png-6d27e8aa8caf79523d85897a023a39ce.ctex::
+Cyborg_jump.png::CompressedTexture2D::5362705307029059782::1763548291::1763548292::1::::<><><>0<>0<>a6da6837853ec7f3c3e21393a603988d<>res://.godot/imported/Cyborg_jump.png-2f130497f8a23cdcc22eb3e0293bd935.ctex::
+Cyborg_punch.png::CompressedTexture2D::7690019332502617569::1763548291::1763548292::1::::<><><>0<>0<>71d09c195ff6bd1409173c343b5b98bc<>res://.godot/imported/Cyborg_punch.png-fbbe8a18c29be4e226e36a4635a93eeb.ctex::
+Cyborg_run.png::CompressedTexture2D::450768651759200163::1763548291::1763548292::1::::<><><>0<>0<>3ccdb2e6ccd9935676ae447dd5482ae7<>res://.godot/imported/Cyborg_run.png-d6ac865a3a015e8074e8fbd104d70a1c.ctex::
+Cyborg_run_attack.png::CompressedTexture2D::6135345609018056266::1763548291::1763548292::1::::<><><>0<>0<>1e3be31f84315433d8414a752bca027a<>res://.godot/imported/Cyborg_run_attack.png-69abf31c387aa4b2706736f2e0892761.ctex::
+::res://assets/player/PSD/::1763616801
+::res://assets/portal/::1763616801
+Particle Effect 1.png::CompressedTexture2D::5800557041466726635::1763548291::1763548292::1::::<><><>0<>0<>eed178d9d795e66d428cf19aa98938e7<>res://.godot/imported/Particle Effect 1.png-3868301e337a059b97b59420653e9691.ctex::
+Particle Effect 2.png::CompressedTexture2D::7951971589271544634::1763548291::1763548292::1::::<><><>0<>0<>0cdcde5f1367d65323397a9ad07e02fa<>res://.godot/imported/Particle Effect 2.png-17eb9488beb9e0a705e87f69465051df.ctex::
+Particle Effect 3.png::CompressedTexture2D::1603295333449412302::1763548291::1763548292::1::::<><><>0<>0<>8e5b01d15af1720aec49ade01f946b5d<>res://.godot/imported/Particle Effect 3.png-62ded1e6039fb22e18ef7a1671643cb0.ctex::
+Portal-Sheet.png::CompressedTexture2D::571268928275225547::1763548291::1763548292::1::::<><><>0<>0<>0e91accd9022b16a17f4636e87ba6131<>res://.godot/imported/Portal-Sheet.png-7a5d6c7a4a22cd73feb9f511e9463973.ctex::
+Portal.png::CompressedTexture2D::6741248352899052551::1763548291::1763548292::1::::<><><>0<>0<>f31cd094cfe066535f0bbc25fd93ab29<>res://.godot/imported/Portal.png-866ded17b4559dbd384e975006fd9298.ctex::
+::res://bin/::1763616801
+::res://bin/android/::1763616801
+::res://bin/linux/::1763616801
+::res://bin/macos/::1763616801
+::res://bin/windows/::1763616802
+::res://levels/::1763616806
+game.tscn::PackedScene::3844366212362077981::1763617628::0::1::::<><><>0<>0<><>::uid://c64apnm77bvxd::::res://scenes/player.tscn<>uid://chtgvnw8hbcof::::res://scripts/player.gd<>uid://7swe1rubmn2o::::res://assets/cavetileset/tileset16x16.png<>uid://yx1n8vnvi1k0::::res://scenes/key.tscn<>uid://cx2kpnblfwop8::::res://scenes/killzone.tscn<>uid://u6qaq8rqqvxy::::res://assets/fonts/PixelOperator8.ttf<>uid://duvrs3h02qb51::::res://scenes/portal.tscn
+::res://scenes/::1763616806
+key.tscn::PackedScene::1733616559119359685::1763562299::0::1::::<><><>0<>0<><>::uid://d4m4qvxkgcu7e::::res://scripts/key.gd<>uid://7swe1rubmn2o::::res://assets/cavetileset/tileset16x16.png<>uid://clf0bajwi0sfv::::res://assets/audio/retro-coin-4-236671.mp3
+killzone.tscn::PackedScene::6443557612112508023::1763566890::0::1::::<><><>0<>0<><>::uid://cptpxyxfwrxf0::::res://scripts/killzone.gd<>uid://clf0bajwi0sfv::::res://assets/audio/retro-coin-4-236671.mp3
+music.tscn::PackedScene::560492705281929872::1763562024::0::1::::<><><>0<>0<><>::uid://c4ge8ntjt8dm2::::res://assets/music/time_for_adventure.mp3
+player.tscn::PackedScene::7008589964779478509::1763564726::0::1::::<><><>0<>0<><>::uid://bfo5e53k2rkfe::::res://assets/player/2 Punk/Punk_idle.png<>uid://5vmc0icccrta::::res://assets/player/2 Punk/Punk_jump.png<>uid://bg3mi88watwap::::res://assets/player/2 Punk/Punk_run.png
+portal.tscn::PackedScene::8607456672482556842::1763565805::0::1::::<><><>0<>0<><>::uid://c2au8mgcu4nv0::::res://scripts/portal.gd<>uid://ieyylphuxp1d::::res://assets/portal/Portal-Sheet.png
+::res://scripts/::1763616806
+key.gd::GDScript::9221301554106995076::1763562024::0::1::::<>Area2D<><>0<>0<><>::
+killzone.gd::GDScript::5865850323783309671::1763566811::0::1::::<>Area2D<><>0<>0<><>::
+player.gd::GDScript::5303788972106180609::1763558329::0::1::::<>CharacterBody2D<><>0<>0<><>::
+portal.gd::GDScript::6669214056335048703::1763564941::0::1::::<>Area2D<><>0<>0<><>::
+::res://src/::1763616806
+::res://src/gen/::1763616806
