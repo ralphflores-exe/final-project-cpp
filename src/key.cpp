@@ -7,13 +7,26 @@
 
 void key::_on_body_entered(Ref<Node2D> body)
 {
-	UtilityFunctions::print("Level Key Acquired!");
-	animation_player->play("pickup");
+	label->set_visible(true);
+	visible = false;
+	set_collision_mask_value(2, false);
+	audio_stream_player_2d->play();
+	timer->start();
+	GameState->set_haveKey(true);
+	get_node("../Portal")->open_portal();
+}
+
+void key::_on_timer_timeout()
+{
+	label->set_visible(false);
+	queue_free();
 }
 
 void key::_ready()
 {
-	animation_player = get_node("AnimationPlayer");
+	audio_stream_player_2d = get_node("AudioStreamPlayer2D");
+	label = get_node("../Label");
+	timer = get_node("Timer");
 }
 
 void key::_bind_methods() {

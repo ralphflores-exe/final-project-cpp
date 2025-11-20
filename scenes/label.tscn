@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsyehxyfkjtj0"]
+
+[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_2uqk7"]
+
+[node name="Label" type="Label"]
+offset_right = 138.0
+offset_bottom = 8.0
+theme_override_fonts/font = ExtResource("1_2uqk7")
+theme_override_font_sizes/font_size = 8
+text = "Level Key Acquired!"

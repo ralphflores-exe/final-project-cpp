@@ -1,7 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://duvrs3h02qb51"]
+[gd_scene load_steps=22 format=3 uid="uid://duvrs3h02qb51"]
 
-[ext_resource type="Script" uid="uid://c2au8mgcu4nv0" path="res://scripts/portal.gd" id="1_1ffj6"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://scripts/portal.gd" id="1_1ffj6"]
+[ext_resource type="Texture2D" uid="uid://cov3leapfubep" path="res://assets/portal/Particle Effect 1.png" id="2_dyed0"]
 [ext_resource type="Texture2D" uid="uid://ieyylphuxp1d" path="res://assets/portal/Portal-Sheet.png" id="2_jr6l0"]
+[ext_resource type="Texture2D" uid="uid://dlj82sxfjpuww" path="res://assets/portal/Particle Effect 2.png" id="3_ckw30"]
+[ext_resource type="Texture2D" uid="uid://w3wbmeerjw6a" path="res://assets/portal/Particle Effect 3.png" id="4_4pvrx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4jfq"]
 atlas = ExtResource("2_jr6l0")
@@ -63,6 +66,29 @@ region = Rect2(0, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_dyed0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ckw30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4pvrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4pvrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ckw30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dyed0")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_d4jfq")
 }, {
 "duration": 1.0,
@@ -105,7 +131,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_f7pif")
 }],
 "loop": true,
-"name": &"default",
+"name": &"open",
 "speed": 7.0
 }]
 
@@ -119,8 +145,8 @@ script = ExtResource("1_1ffj6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kjyi5")
-autoplay = "default"
-frame_progress = 0.5551482
+animation = &"closed"
+autoplay = "closed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_1ffj6")

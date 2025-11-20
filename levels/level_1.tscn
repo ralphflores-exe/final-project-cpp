@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bu1ifdhwf460x"]
+[gd_scene load_steps=12 format=3 uid="uid://bu1ifdhwf460x"]
 
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/cavetileset/tileset16x16.png" id="1_gwceb"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_l53as"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="5_5ot28"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="6_aerfg"]
 [ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="7_nmsli"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="8_l53as"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhr6a"]
 texture = ExtResource("1_gwceb")
@@ -134,3 +135,10 @@ theme_override_fonts/font = ExtResource("7_nmsli")
 theme_override_font_sizes/font_size = 8
 text = "Space/W to Jump
 'A' and 'D' to Move"
+
+[node name="Label" parent="." instance=ExtResource("8_l53as")]
+visible = false
+offset_left = 121.0
+offset_top = -189.0
+offset_right = 259.0
+offset_bottom = -181.0

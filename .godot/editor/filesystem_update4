@@ -1,0 +1,7 @@
+res://scripts/key.gd
+res://scripts/portal.gd
+res://levels/level_1.tscn
+res://GameState.gd
+res://scenes/portal.tscn
+res://levels/level_2.tscn
+res://scenes/player.tscn
