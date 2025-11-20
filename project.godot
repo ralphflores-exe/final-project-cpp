@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="FinalProject"
-run/main_scene="uid://bu1ifdhwf460x"
+run/main_scene="uid://c68sgkrah4w1i"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameState="*res://GameState.gd"
+LevelManager="*res://LevelManager.gd"
 
 [editor_plugins]
 

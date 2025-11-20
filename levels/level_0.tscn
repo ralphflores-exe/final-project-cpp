@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://c68sgkrah4w1i"]
+
+[ext_resource type="Script" uid="uid://dink0eralw8p5" path="res://scripts/mainmenu.gd" id="1_eus5j"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 148.0
+offset_bottom = 85.0
+script = ExtResource("1_eus5j")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 36.0
+offset_bottom = 24.0
+theme_override_font_sizes/font_size = 8
+text = "Styart"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 27.0
+offset_right = 47.0
+offset_bottom = 38.0
+text = "quit"
