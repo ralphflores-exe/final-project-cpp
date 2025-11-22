@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://bx8xedd4abeif"]
+
+[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://assets/tile sets/Factory/4 Animated objects/Saw.png" id="1_epgth"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epgth"]
+atlas = ExtResource("1_epgth")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rqbh"]
+atlas = ExtResource("1_epgth")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5h51y"]
+atlas = ExtResource("1_epgth")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5rph"]
+atlas = ExtResource("1_epgth")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3pt35"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epgth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rqbh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5h51y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5rph")
+}],
+"loop": true,
+"name": &"Saw",
+"speed": 5.0
+}]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3pt35")
+animation = &"Saw"
+autoplay = "Saw"
+frame_progress = 0.7487414

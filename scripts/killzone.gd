@@ -1,4 +1,4 @@
-extends Area2D
+extends Node
 
 @onready var timer: Timer = $Timer
 @onready var death_sound: AudioStreamPlayer2D = $"death sound"
