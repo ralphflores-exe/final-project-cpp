@@ -1,6 +1,2 @@
-res://levels/level_1.tscn
-res://LevelManager.gd
-res://scripts/portal.gd
-res://levels/main_menu.tscn
 res://levels/level_0.tscn
-res://scripts/mainmenu.gd
+res://LevelManager.gd

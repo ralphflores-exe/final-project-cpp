@@ -5,23 +5,25 @@
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 148.0
-offset_bottom = 85.0
+offset_left = -11.0
+offset_top = 6.0
+offset_right = 1147.0
+offset_bottom = 659.0
 script = ExtResource("1_eus5j")
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 36.0
-offset_bottom = 24.0
+offset_left = 105.0
+offset_top = 54.0
+offset_right = 343.0
+offset_bottom = 230.0
 theme_override_font_sizes/font_size = 8
 text = "Styart"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 27.0
-offset_right = 47.0
-offset_bottom = 38.0
+offset_left = 347.0
+offset_top = 285.0
+offset_right = 835.0
+offset_bottom = 609.0
 text = "quit"
