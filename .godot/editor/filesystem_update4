@@ -1,0 +1,7 @@
+res://levels/level_2.tscn
+res://LevelManager.gd
+res://scenes/player.tscn
+res://scripts/killzone.gd
+res://GameState.gd
+res://scripts/player.gd
+res://scenes/killzone.tscn

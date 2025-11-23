@@ -1,6 +1,6 @@
 extends Node
 
-var current_level: int = 0   # starts at Level1.tscn
+var current_level: int = 0   # starts at level0.tscn or main menu
 
 func goto_next_level():
 	GameState.haveKey = false

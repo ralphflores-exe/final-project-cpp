@@ -7,6 +7,21 @@ const JUMP_VELOCITY = -280.0
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
+	if GameState.dead:
+		# Stop horizontal movement, but allow vertical (gravity) to continue
+		velocity.x = 0
+		
+		# Apply gravity so player can fall
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+		
+		# Play death animation (loop if you want)
+		animated_sprite.play("death")
+		
+		# Apply movement
+		move_and_slide()
+		return
+		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
