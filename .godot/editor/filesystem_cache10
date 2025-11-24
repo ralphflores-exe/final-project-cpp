@@ -1,7 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763967195
+::res://::1763985166
 default_bus_layout.tres::AudioBusLayout::2290685048788414172::1763964348::0::1::::<><><>0<>0<><>::
-GameState.gd::GDScript::5376413462532656215::1763908932::0::1::::<>Node<><>0<>0<><>::
+GameState.gd::GDScript::5376413462532656215::1763968257::0::1::::<>Node<><>0<>0<><>::
 LevelManager.gd::GDScript::1042451700879354770::1763907699::0::1::::<>Node<><>0<>0<><>::
 README.md::TextFile::-1::1763618910::0::1::::<><><>0<>0<><>::
 ::res://addons/::1763616801
@@ -248,12 +248,13 @@ Menu.png::CompressedTexture2D::8054874551372650713::1763962110::1763964232::1:::
 ::res://bin/linux/::1763616801
 ::res://bin/macos/::1763616801
 ::res://bin/windows/::1763616802
-::res://levels/::1763967214
-level_0.tscn::PackedScene::5116268228933122263::1763968063::0::1::::<><><>0<>0<><>::uid://bmkfjsib4qoiv::::res://scripts/lvl_0.gd<>uid://chpu12yk2axta::::res://assets/tile sets/Factory/2 Background/Background.png<>uid://dm03uvyw8opr2::::res://assets/tile sets/Menu/Menu.png<>uid://5vay3jk44uvw::::res://assets/Theme/Menu/hover_style_box_flat.tres<>uid://cltmd0lgh0ssr::::res://assets/Theme/Menu/new_style_box_flat.tres<>uid://dlokdg2rjn0uw::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://g12yyecvungx::::res://assets/tile sets/Menu/Logo2.png<>uid://u6qaq8rqqvxy::::res://assets/fonts/PixelOperator8.ttf<>uid://tnl15oc3k3ec::::res://assets/audio/171697__nenadsimic__menu-selection-click.wav
-level_1.tscn::PackedScene::3844366212362077981::1763881238::0::1::::<><><>0<>0<><>::uid://7swe1rubmn2o::::res://assets/tile sets/cavetileset/tileset16x16.png<>uid://c64apnm77bvxd::::res://scenes/player.tscn<>uid://chtgvnw8hbcof::::res://scripts/player.gd<>uid://duvrs3h02qb51::::res://scenes/portal.tscn<>uid://yx1n8vnvi1k0::::res://scenes/key.tscn<>uid://cx2kpnblfwop8::::res://scenes/killzone.tscn<>uid://u6qaq8rqqvxy::::res://assets/fonts/PixelOperator8.ttf<>uid://dsyehxyfkjtj0::::res://scenes/label.tscn
-level_2.tscn::PackedScene::8758291304205055715::1763962110::0::1::::<><><>0<>0<><>::uid://7swe1rubmn2o::::res://assets/tile sets/cavetileset/tileset16x16.png<>uid://cequnpsr7gj2y::::res://assets/tile sets/Factory/4 Animated objects/Saw.png<>uid://c64apnm77bvxd::::res://scenes/player.tscn<>uid://chtgvnw8hbcof::::res://scripts/player.gd<>uid://bx8xedd4abeif::::res://scenes/saw2.tscn<>uid://cptpxyxfwrxf0::::res://scripts/killzone.gd<>uid://cx2kpnblfwop8::::res://scenes/killzone.tscn<>uid://dsyehxyfkjtj0::::res://scenes/label.tscn<>uid://yx1n8vnvi1k0::::res://scenes/key.tscn<>uid://duvrs3h02qb51::::res://scenes/portal.tscn
+::res://levels/::1763969383
+level_0.tscn::PackedScene::5116268228933122263::1763969383::0::1::::<><><>0<>0<><>::uid://bmkfjsib4qoiv::::res://scripts/level_0.gd<>uid://chpu12yk2axta::::res://assets/tile sets/Factory/2 Background/Background.png<>uid://dm03uvyw8opr2::::res://assets/tile sets/Menu/Menu.png<>uid://5vay3jk44uvw::::res://assets/Theme/Menu/hover_style_box_flat.tres<>uid://cltmd0lgh0ssr::::res://assets/Theme/Menu/new_style_box_flat.tres<>uid://dlokdg2rjn0uw::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://g12yyecvungx::::res://assets/tile sets/Menu/Logo2.png<>uid://u6qaq8rqqvxy::::res://assets/fonts/PixelOperator8.ttf<>uid://tnl15oc3k3ec::::res://assets/audio/171697__nenadsimic__menu-selection-click.wav
+level_1.tscn::PackedScene::3844366212362077981::1763969261::0::1::::<><><>0<>0<><>::uid://sc4mhb5dfxri::::res://scenes/hud.tscn<>uid://7swe1rubmn2o::::res://assets/tile sets/cavetileset/tileset16x16.png<>uid://c64apnm77bvxd::::res://scenes/player.tscn<>uid://chtgvnw8hbcof::::res://scripts/player.gd<>uid://duvrs3h02qb51::::res://scenes/portal.tscn<>uid://yx1n8vnvi1k0::::res://scenes/key.tscn<>uid://cx2kpnblfwop8::::res://scenes/killzone.tscn<>uid://u6qaq8rqqvxy::::res://assets/fonts/PixelOperator8.ttf<>uid://dsyehxyfkjtj0::::res://scenes/label.tscn
+level_2.tscn::PackedScene::8758291304205055715::1763969046::0::1::::<><><>0<>0<><>::uid://sc4mhb5dfxri::::res://scenes/hud.tscn<>uid://7swe1rubmn2o::::res://assets/tile sets/cavetileset/tileset16x16.png<>uid://cequnpsr7gj2y::::res://assets/tile sets/Factory/4 Animated objects/Saw.png<>uid://c64apnm77bvxd::::res://scenes/player.tscn<>uid://chtgvnw8hbcof::::res://scripts/player.gd<>uid://bx8xedd4abeif::::res://scenes/saw2.tscn<>uid://cptpxyxfwrxf0::::res://scripts/killzone.gd<>uid://cx2kpnblfwop8::::res://scenes/killzone.tscn<>uid://dsyehxyfkjtj0::::res://scenes/label.tscn<>uid://yx1n8vnvi1k0::::res://scenes/key.tscn<>uid://duvrs3h02qb51::::res://scenes/portal.tscn
 level_3.tscn::PackedScene::3927132406644028506::1763909587::0::1::::<><><>0<>0<><>::
-::res://scenes/::1763967074
+::res://scenes/::1763969012
+hud.tscn::PackedScene::1269310533885339518::1763969012::0::1::::<><><>0<>0<><>::uid://o6p6u4o1c830::::res://scripts/hud.gd<>uid://dlokdg2rjn0uw::::res://assets/fonts/PixelOperator8-Bold.ttf
 key.tscn::PackedScene::1733616559119359685::1763881238::0::1::::<><><>0<>0<><>::uid://d4m4qvxkgcu7e::::res://scripts/key.gd<>uid://7swe1rubmn2o::::res://assets/tile sets/cavetileset/tileset16x16.png<>uid://clf0bajwi0sfv::::res://assets/audio/retro-coin-4-236671.mp3
 killzone.tscn::PackedScene::6443557612112508023::1763964996::0::1::::<><><>0<>0<><>::uid://cptpxyxfwrxf0::::res://scripts/killzone.gd<>uid://ns6ycur2gof1::::res://assets/audio/416838__tonsil5__grunt2-death-pain.wav
 label.tscn::PackedScene::8472462916542996639::1763623860::0::1::::<><><>0<>0<><>::uid://dlokdg2rjn0uw::::res://assets/fonts/PixelOperator8-Bold.ttf
@@ -261,10 +262,11 @@ music.tscn::PackedScene::560492705281929872::1763562024::0::1::::<><><>0<>0<><>:
 player.tscn::PackedScene::7008589964779478509::1763967074::0::1::::<><><>0<>0<><>::uid://cib0jtr8d4gd2::::res://assets/player/2 Punk/Punk_death.png<>uid://bfo5e53k2rkfe::::res://assets/player/2 Punk/Punk_idle.png<>uid://5vmc0icccrta::::res://assets/player/2 Punk/Punk_jump.png<>uid://bg3mi88watwap::::res://assets/player/2 Punk/Punk_run.png<>uid://tfjqc51sy6up::::res://assets/player/2 Punk/Punk_hurt.png<>uid://cjf1a1r4eym32::::res://assets/audio/146726__leszek_szary__jumping.wav<>uid://c0yjvwhtlio77::::res://assets/audio/54779__bevangoldswain__running-hard-surface.wav
 portal.tscn::PackedScene::8607456672482556842::1763646590::0::1::::<><><>0<>0<><>::uid://bc0awhjbnuahy::::res://scripts/portal.gd<>uid://cov3leapfubep::::res://assets/portal/Particle Effect 1.png<>uid://ieyylphuxp1d::::res://assets/portal/Portal-Sheet.png<>uid://dlj82sxfjpuww::::res://assets/portal/Particle Effect 2.png<>uid://w3wbmeerjw6a::::res://assets/portal/Particle Effect 3.png
 saw2.tscn::PackedScene::4070292350783201933::1763881238::0::1::::<><><>0<>0<><>::uid://cequnpsr7gj2y::::res://assets/tile sets/Factory/4 Animated objects/Saw.png
-::res://scripts/::1763967074
+::res://scripts/::1763969012
+hud.gd::GDScript::1047606731748144517::1763969012::0::1::::<>Control<><>0<>0<><>::
 key.gd::GDScript::9221301554106995076::1763645568::0::1::::<>Area2D<><>0<>0<><>::
-killzone.gd::GDScript::5865850323783309671::1763965186::0::1::::<>Node<><>0<>0<><>::
-lvl_0.gd::GDScript::3249651199862636237::1763964957::0::1::::<>Control<><>0<>0<><>::
-player.gd::GDScript::5303788972106180609::1763967074::0::1::::<>CharacterBody2D<><>0<>0<><>::
+killzone.gd::GDScript::5865850323783309671::1763968257::0::1::::<>Node<><>0<>0<><>::
+level_0.gd::GDScript::3249651199862636237::1763964957::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript::5303788972106180609::1763968257::0::1::::<>CharacterBody2D<><>0<>0<><>::
 portal.gd::GDScript::2578447483916852822::1763652929::0::1::::<>Area2D<><>0<>0<><>::
 ::res://src/::1763646490

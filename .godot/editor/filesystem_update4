@@ -1,9 +1,0 @@
-res://scripts/player.gd
-res://scenes/player.tscn
-res://levels/level_0.tscn
-res://levels/level_1.tscn
-res://GameState.gd
-res://scripts/killzone.gd
-res://scenes/hud.tscn
-res://scripts/hud.gd
-res://levels/level_2.tscn
