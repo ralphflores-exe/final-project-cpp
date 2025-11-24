@@ -50,7 +50,7 @@ anchor_bottom = 0.5
 offset_left = -106.75
 offset_top = -88.1875
 offset_right = 106.75
-offset_bottom = 88.1875
+offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ajcwx")
@@ -70,21 +70,17 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -86.0
-offset_top = -39.999996
+offset_top = -31.40625
 offset_right = 85.0
-offset_bottom = 86.25873
+offset_bottom = 51.59375
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_62e2m")
-theme_override_constants/separation = 20
+theme_override_constants/separation = 32
 
 [node name="Start" type="Button" parent="NinePatchRect/VBoxContainer"]
 layout_mode = 2
 text = "Start"
-
-[node name="Options" type="Button" parent="NinePatchRect/VBoxContainer"]
-layout_mode = 2
-text = "Options"
 
 [node name="Quit" type="Button" parent="NinePatchRect/VBoxContainer"]
 layout_mode = 2
