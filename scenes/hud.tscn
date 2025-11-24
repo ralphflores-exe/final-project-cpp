@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://sc4mhb5dfxri"]
+
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://scripts/hud.gd" id="1_oo0fn"]
+[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_5ysmq"]
+
+[node name="Hud" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_oo0fn")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 181.0
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("2_5ysmq")
+theme_override_font_sizes/font_size = 24
+text = "Deaths: 0"

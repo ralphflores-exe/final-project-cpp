@@ -1,5 +1,7 @@
-Panel
+CanvasLayer
 Label
+AudioStreamPlayer2D
+Panel
 AnimatableBody2D
 Camera2D
 TextureRect
@@ -11,5 +13,3 @@ AnimationPlayer
 AnimationTree
 RemoteTransform2D
 PathFollow2D
-Path2D
-Node2D

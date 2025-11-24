@@ -1,5 +1,6 @@
-[gd_scene load_steps=32 format=3 uid="uid://dw1t1ptrec4b4"]
+[gd_scene load_steps=33 format=3 uid="uid://dw1t1ptrec4b4"]
 
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_hbb88"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/cavetileset/tileset16x16.png" id="1_vm7no"]
 [ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://assets/tile sets/Factory/4 Animated objects/Saw.png" id="2_hbb88"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="3_wcjpl"]
@@ -242,6 +243,14 @@ _data = {
 
 [node name="Level 2" type="Node2D"]
 position = Vector2(-10, 57)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("1_hbb88")]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = 5.0
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xqsqx")

@@ -1,48 +1,148 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7ly01i02olv7"]
+[gd_scene load_steps=13 format=3 uid="uid://ce5mgp58b7tvr"]
 
-[sub_resource type="GDScript" id="GDScript_2vvn8"]
-script/source = "extends Control
-@onready var start: Button = $Start
-@onready var quit: Button = $Quit
+[ext_resource type="Script" uid="uid://bmkfjsib4qoiv" path="res://scripts/level_0.gd" id="1_tfamw"]
+[ext_resource type="Texture2D" uid="uid://chpu12yk2axta" path="res://assets/tile sets/Factory/2 Background/Background.png" id="2_dm5o4"]
+[ext_resource type="Texture2D" uid="uid://dm03uvyw8opr2" path="res://assets/tile sets/Menu/Menu.png" id="3_obtcn"]
+[ext_resource type="StyleBox" uid="uid://5vay3jk44uvw" path="res://assets/Theme/Menu/hover_style_box_flat.tres" id="4_2ro2b"]
+[ext_resource type="StyleBox" uid="uid://cltmd0lgh0ssr" path="res://assets/Theme/Menu/new_style_box_flat.tres" id="5_fj15s"]
+[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="6_p0s0h"]
+[ext_resource type="Texture2D" uid="uid://g12yyecvungx" path="res://assets/tile sets/Menu/Logo2.png" id="7_axdoh"]
+[ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="8_as6hq"]
+[ext_resource type="AudioStream" uid="uid://tnl15oc3k3ec" path="res://assets/audio/171697__nenadsimic__menu-selection-click.wav" id="9_qgvj7"]
 
-func _ready():
-	# Connect buttons to functions
-	$Start.pressed.connect(_on_start_game_pressed)
-	$Quit.pressed.connect(_on_quit_pressed)
-func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file(\"res://scenes/lvl_1(temp).tscn\")	
-	
-func _on_start_game_pressed():
-	LevelManager.goto_next_level()
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ifpdw"]
+texture = ExtResource("2_dm5o4")
+modulate_color = Color(0.30692264, 0.3069227, 0.30692258, 1)
 
-func _on_quit_pressed():
-	get_tree().quit()
-"
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_brbbq"]
 
-[node name="MainMenu" type="Control"]
+[sub_resource type="Theme" id="Theme_62e2m"]
+Button/styles/focus = SubResource("StyleBoxEmpty_brbbq")
+Button/styles/hover = ExtResource("4_2ro2b")
+Button/styles/normal = ExtResource("5_fj15s")
+
+[node name="Level 0" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = -11.0
-offset_top = 6.0
-offset_right = 1147.0
-offset_bottom = 659.0
-script = SubResource("GDScript_2vvn8")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = 69.0
+offset_right = -19.0
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tfamw")
 
-[node name="Start" type="Button" parent="."]
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ifpdw")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.75
+offset_top = -88.1875
+offset_right = 106.75
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_obtcn")
+region_rect = Rect2(0, 0, 96, 90)
+patch_margin_left = 6
+patch_margin_top = 8
+patch_margin_right = 6
+patch_margin_bottom = 6
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -31.40625
+offset_right = 85.0
+offset_bottom = 51.59375
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_62e2m")
+theme_override_constants/separation = 32
+
+[node name="Start" type="Button" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_p0s0h")
+text = "Start"
+
+[node name="Quit" type="Button" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_p0s0h")
+text = "Quit"
+
+[node name="Game Logo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -169.0
+offset_top = 152.0
+offset_right = 180.0
+offset_bottom = 267.0
+grow_horizontal = 2
+texture = ExtResource("7_axdoh")
+
+[node name="Game Title" type="Label" parent="Game Logo"]
 layout_mode = 0
-offset_left = 105.0
-offset_top = 54.0
-offset_right = 343.0
-offset_bottom = 230.0
-theme_override_font_sizes/font_size = 8
-text = "Styart"
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 339.0
+offset_bottom = 85.0
+theme_override_fonts/font = ExtResource("6_p0s0h")
+theme_override_font_sizes/font_size = 24
+text = "Temp Game Title"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Quit" type="Button" parent="."]
-layout_mode = 0
-offset_left = 347.0
-offset_top = 285.0
-offset_right = 835.0
-offset_bottom = 609.0
-text = "quit"
+[node name="Credits" type="Label" parent="Game Logo"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = 36.5
+offset_right = 43.5
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_as6hq")
+text = "by Group 2"
 
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(570, 276)
+zoom = Vector2(1.5, 1.5)
+limit_left = -18
+limit_top = 69
+limit_right = 1133
+limit_bottom = 717
+
+[node name="pressSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_qgvj7")
+volume_db = 10.0
+bus = &"SFX"
+
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="finished" from="pressSound" to="." method="_on_press_sound_finished"]

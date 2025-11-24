@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://bu1ifdhwf460x"]
+[gd_scene load_steps=13 format=3 uid="uid://bu1ifdhwf460x"]
 
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_3sk1a"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/cavetileset/tileset16x16.png" id="1_gwceb"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_l53as"]
 [ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="3_3sk1a"]
@@ -96,9 +97,13 @@ sources/0 = SubResource("TileSetAtlasSource_vhr6a")
 
 [node name="Level 1" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(194, -112)
-zoom = Vector2(3, 3)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("1_3sk1a")]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = 5.0
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(195, -114)
@@ -142,3 +147,11 @@ offset_left = 121.0
 offset_top = -189.0
 offset_right = 259.0
 offset_bottom = -181.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(194, -112)
+zoom = Vector2(3, 3)
+limit_left = -12
+limit_top = -240
+limit_right = 400
+limit_bottom = 12
