@@ -1,7 +1,10 @@
-res://levels/level_2.tscn
-res://LevelManager.gd
+res://control.tscn
+res://scenes/control.tscn
+res://assets/Theme/Menu/hover_style_box_flat.tres
+res://assets/Theme/Menu/new_style_box_flat.tres
+res://scripts/mainmenu.gd
+res://scenes/control.gd
 res://scenes/player.tscn
-res://scripts/killzone.gd
-res://GameState.gd
-res://scripts/player.gd
-res://scenes/killzone.tscn
+res://levels/control.tscn
+res://levels/level_2.tscn
+res://levels/lvl_0.tscn

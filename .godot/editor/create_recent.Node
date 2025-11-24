@@ -1,3 +1,11 @@
+Panel
+Label
+AnimatableBody2D
+Camera2D
+TextureRect
+Button
+VBoxContainer
+NinePatchRect
 CollisionShape2D
 AnimationPlayer
 AnimationTree
@@ -5,10 +13,3 @@ RemoteTransform2D
 PathFollow2D
 Path2D
 Node2D
-AnimatedSprite2D
-AnimatableBody2D
-CharacterBody2D
-Sprite2D
-TileMap
-Camera2D
-Button
