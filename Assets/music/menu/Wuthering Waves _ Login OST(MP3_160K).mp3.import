@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlr4s1tmg7co6"
+path="res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-21b591ce09388646386b31f7cf50b188.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-21b591ce09388646386b31f7cf50b188.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

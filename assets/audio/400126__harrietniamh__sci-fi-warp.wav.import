@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ccqs1yoryja5d"
-path="res://.godot/imported/400126__harrietniamh__sci-fi-warp.wav-3025a2fe642b182e81b295198d43c813.sample"
+path="res://.godot/imported/400126__harrietniamh__sci-fi-warp.wav-6935caa591b9bd9fdfb2a39d2d5ccbc7.sample"
 
 [deps]
 
-source_file="res://assets/audio/400126__harrietniamh__sci-fi-warp.wav"
-dest_files=["res://.godot/imported/400126__harrietniamh__sci-fi-warp.wav-3025a2fe642b182e81b295198d43c813.sample"]
+source_file="res://Assets/audio/400126__harrietniamh__sci-fi-warp.wav"
+dest_files=["res://.godot/imported/400126__harrietniamh__sci-fi-warp.wav-6935caa591b9bd9fdfb2a39d2d5ccbc7.sample"]
 
 [params]
 

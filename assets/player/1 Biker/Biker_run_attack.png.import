@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s6scckpjx2o4"
-path="res://.godot/imported/Biker_run_attack.png-07b51f4eff24ba8f051b81b7da2059f2.ctex"
+path="res://.godot/imported/Biker_run_attack.png-c791558e4da846fe988dba7609ca92ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/1 Biker/Biker_run_attack.png"
-dest_files=["res://.godot/imported/Biker_run_attack.png-07b51f4eff24ba8f051b81b7da2059f2.ctex"]
+source_file="res://Assets/player/1 Biker/Biker_run_attack.png"
+dest_files=["res://.godot/imported/Biker_run_attack.png-c791558e4da846fe988dba7609ca92ff.ctex"]
 
 [params]
 

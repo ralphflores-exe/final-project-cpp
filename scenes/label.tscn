@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dsyehxyfkjtj0"]
 
-[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_2uqk7"]
+[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="1_2uqk7"]
 
 [node name="Label" type="Label"]
 offset_right = 138.0

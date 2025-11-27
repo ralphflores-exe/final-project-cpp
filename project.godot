@@ -17,13 +17,13 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GameState="*res://GameState.gd"
-LevelManager="*res://LevelManager.gd"
-TransitionManager="*res://TransitionManager.gd"
+GameState="*res://Scripts/GameState.gd"
+LevelManager="*res://Scripts/LevelManager.gd"
+TransitionManager="*res://Scripts/TransitionManager.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gdscript2all/plugin.cfg")
+enabled=PackedStringArray()
 
 [gui]
 

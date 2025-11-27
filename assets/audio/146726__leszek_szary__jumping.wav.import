@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cjf1a1r4eym32"
-path="res://.godot/imported/146726__leszek_szary__jumping.wav-3a0ae2bc1bd82c7299ca4916364fde4a.sample"
+path="res://.godot/imported/146726__leszek_szary__jumping.wav-ec0b28a8358370399016059fc6f7948a.sample"
 
 [deps]
 
-source_file="res://assets/audio/146726__leszek_szary__jumping.wav"
-dest_files=["res://.godot/imported/146726__leszek_szary__jumping.wav-3a0ae2bc1bd82c7299ca4916364fde4a.sample"]
+source_file="res://Assets/audio/146726__leszek_szary__jumping.wav"
+dest_files=["res://.godot/imported/146726__leszek_szary__jumping.wav-ec0b28a8358370399016059fc6f7948a.sample"]
 
 [params]
 

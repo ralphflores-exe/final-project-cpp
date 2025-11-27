@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bx8xedd4abeif"]
 
-[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://assets/tile sets/Factory/4 Animated objects/Saw.png" id="1_epgth"]
+[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://Assets/tile sets/Factory/Objects/Saw.png" id="1_epgth"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_epgth"]
 atlas = ExtResource("1_epgth")
@@ -44,4 +44,4 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_3pt35")
 animation = &"Saw"
 autoplay = "Saw"
-frame_progress = 0.7487414
+frame_progress = 0.08396101

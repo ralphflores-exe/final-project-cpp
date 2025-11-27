@@ -1,10 +1,10 @@
 [gd_scene load_steps=22 format=3 uid="uid://duvrs3h02qb51"]
 
-[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://scripts/portal.gd" id="1_1ffj6"]
-[ext_resource type="Texture2D" uid="uid://cov3leapfubep" path="res://assets/portal/Particle Effect 1.png" id="2_dyed0"]
-[ext_resource type="Texture2D" uid="uid://ieyylphuxp1d" path="res://assets/portal/Portal-Sheet.png" id="2_jr6l0"]
-[ext_resource type="Texture2D" uid="uid://dlj82sxfjpuww" path="res://assets/portal/Particle Effect 2.png" id="3_ckw30"]
-[ext_resource type="Texture2D" uid="uid://w3wbmeerjw6a" path="res://assets/portal/Particle Effect 3.png" id="4_4pvrx"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://Scripts/portal.gd" id="1_1ffj6"]
+[ext_resource type="Texture2D" uid="uid://cov3leapfubep" path="res://Assets/portal/Particle Effect 1.png" id="2_dyed0"]
+[ext_resource type="Texture2D" uid="uid://ieyylphuxp1d" path="res://Assets/portal/Portal-Sheet.png" id="2_jr6l0"]
+[ext_resource type="Texture2D" uid="uid://dlj82sxfjpuww" path="res://Assets/portal/Particle Effect 2.png" id="3_ckw30"]
+[ext_resource type="Texture2D" uid="uid://w3wbmeerjw6a" path="res://Assets/portal/Particle Effect 3.png" id="4_4pvrx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4jfq"]
 atlas = ExtResource("2_jr6l0")
