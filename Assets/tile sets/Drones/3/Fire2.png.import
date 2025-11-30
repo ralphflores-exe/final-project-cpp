@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwjlc0tccucn4"
-path="res://.godot/imported/Fire2.png-58de2d23c23244c156590f23125ed136.ctex"
+path="res://.godot/imported/Fire2.png-ed9b3565d8a45223de9b828764fb19d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/Drones/3/Fire2.png"
-dest_files=["res://.godot/imported/Fire2.png-58de2d23c23244c156590f23125ed136.ctex"]
+source_file="res://assets/tile sets/Drones/3/Fire2.png"
+dest_files=["res://.godot/imported/Fire2.png-ed9b3565d8a45223de9b828764fb19d1.ctex"]
 
 [params]
 

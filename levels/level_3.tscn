@@ -1,17 +1,17 @@
 [gd_scene load_steps=37 format=3 uid="uid://bv7lkdkl8wft7"]
 
-[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://Assets/tile sets/Factory/Tiles/Tileset.png" id="1_cb8d3"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
-[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://Scenes/player.tscn" id="2_5lru4"]
-[ext_resource type="Texture2D" uid="uid://tx3nyb5nuju" path="res://Assets/tile sets/Factory/Background/Background.png" id="2_absw3"]
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://Scripts/player.gd" id="3_ej5lj"]
-[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://Scenes/platform.tscn" id="5_padch"]
-[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://Scenes/key.tscn" id="7_ay5qi"]
-[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://Scenes/killzone.tscn" id="8_fa81k"]
-[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://Scenes/portal.tscn" id="9_trpa2"]
-[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://Scenes/saw2.tscn" id="10_4t7ew"]
-[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://Scenes/label.tscn" id="11_4t7ew"]
-[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://Assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
+[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tiles/Tileset.png" id="1_cb8d3"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
+[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_5lru4"]
+[ext_resource type="Texture2D" uid="uid://tx3nyb5nuju" path="res://assets/tile sets/Factory/Background/Background.png" id="2_absw3"]
+[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="3_ej5lj"]
+[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="5_padch"]
+[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="7_ay5qi"]
+[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_fa81k"]
+[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="9_trpa2"]
+[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="10_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="11_4t7ew"]
+[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay5qi"]
 texture = ExtResource("1_uwxw1")
@@ -298,6 +298,21 @@ _data = {
 &"RESET": SubResource("Animation_uwxw1")
 }
 
+[sub_resource type="Animation" id="Animation_ck3gp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(687, -191)]
+}
+
 [sub_resource type="Animation" id="Animation_fa81k"]
 resource_name = "move"
 length = 4.0
@@ -313,21 +328,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(687, -191), Vector2(687, -368)]
-}
-
-[sub_resource type="Animation" id="Animation_ck3gp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(687, -191)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_trpa2"]
@@ -360,6 +360,22 @@ size = Vector2(30, 8)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wr1k"]
 size = Vector2(79, 8.75)
 
+[sub_resource type="Animation" id="Animation_oojpf"]
+length = 4.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1391, 14), Vector2(1391, -102)]
+}
+
 [sub_resource type="Animation" id="Animation_4t7ew"]
 resource_name = "move"
 length = 4.0
@@ -377,22 +393,6 @@ tracks/0/keys = {
 "values": [Vector2(1391, 14), Vector2(1391, -95)]
 }
 
-[sub_resource type="Animation" id="Animation_oojpf"]
-length = 4.0
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1391, 14), Vector2(1391, -102)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7cdb2"]
 _data = {
 &"RESET": SubResource("Animation_oojpf"),
@@ -404,6 +404,21 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 1337, -44, 0, 0, 0, 0, 1379, -63, 0, 0, 0, 0, 1379, -151, 0, 0, 0, 0, 1337, -174, 0, 0, 0, 0, 1301, -152, 0, 0, 0, 0, 1302, -64, 0, 0, 0, 0, 1337, -44)
 }
 point_count = 7
+
+[sub_resource type="Animation" id="Animation_2urlj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_7cdb2"]
 resource_name = "new_animation"
@@ -420,21 +435,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
-}
-
-[sub_resource type="Animation" id="Animation_2urlj"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PathFollow2D:progress_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_88iqf"]
@@ -568,8 +568,9 @@ libraries = {
 autoplay = "RESET"
 
 [node name="AnimatableBody2D" parent="." instance=ExtResource("10_4t7ew")]
-position = Vector2(1301.6981, -90.5709)
-rotation = 1.5594332
+position = Vector2(1337, -44)
+rotation = -0.42483217
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_trpa2")
@@ -588,6 +589,7 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="Label" parent="." instance=ExtResource("11_4t7ew")]
+visible = false
 z_index = 81
 offset_left = 51.0
 offset_top = -439.0

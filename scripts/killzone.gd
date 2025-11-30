@@ -7,11 +7,9 @@ func _on_body_entered(body: Node2D) -> void:
 	GameState.dead = true
 	GameState.deaths += 1
 	death_sound.play()
-	Engine.time_scale = 0.5
 	timer.start()
 
 func _on_timer_timeout() -> void:
-	Engine.time_scale = 1.0
 	GameState.haveKey = false
 	GameState.dead = false
 	get_tree().reload_current_scene() # Replace with function body.

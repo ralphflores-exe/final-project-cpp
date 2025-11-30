@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o4dybcktaxho"
-path="res://.godot/imported/ezgif-frame-055.jpg-c935616dc63867623dd42f102b8e04ac.ctex"
+path="res://.godot/imported/ezgif-frame-055.jpg-de55dd8079cced8b0f20c40065b0c228.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/transition/ezgif-frame-055.jpg"
-dest_files=["res://.godot/imported/ezgif-frame-055.jpg-c935616dc63867623dd42f102b8e04ac.ctex"]
+source_file="res://assets/transition/ezgif-frame-055.jpg"
+dest_files=["res://.godot/imported/ezgif-frame-055.jpg-de55dd8079cced8b0f20c40065b0c228.ctex"]
 
 [params]
 

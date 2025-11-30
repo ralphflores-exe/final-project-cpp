@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbl5g3ripr56f"
-path="res://.godot/imported/Scan.png-0f9740608b4c36cfe399c7e784cf1dcd.ctex"
+path="res://.godot/imported/Scan.png-70bedd932aec2ace19df8c7a6a81799a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/Drones/1/Scan.png"
-dest_files=["res://.godot/imported/Scan.png-0f9740608b4c36cfe399c7e784cf1dcd.ctex"]
+source_file="res://assets/tile sets/Drones/1/Scan.png"
+dest_files=["res://.godot/imported/Scan.png-70bedd932aec2ace19df8c7a6a81799a.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c0yjvwhtlio77"
-path="res://.godot/imported/54779__bevangoldswain__running-hard-surface.wav-2f7e1cfef330a8791de9a2a84fa9ff55.sample"
+path="res://.godot/imported/54779__bevangoldswain__running-hard-surface.wav-3c446dfc432e8b1f2c5bd4126259a08f.sample"
 
 [deps]
 
-source_file="res://Assets/audio/54779__bevangoldswain__running-hard-surface.wav"
-dest_files=["res://.godot/imported/54779__bevangoldswain__running-hard-surface.wav-2f7e1cfef330a8791de9a2a84fa9ff55.sample"]
+source_file="res://assets/audio/54779__bevangoldswain__running-hard-surface.wav"
+dest_files=["res://.godot/imported/54779__bevangoldswain__running-hard-surface.wav-3c446dfc432e8b1f2c5bd4126259a08f.sample"]
 
 [params]
 

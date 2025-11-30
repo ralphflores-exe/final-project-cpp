@@ -1,17 +1,23 @@
 {
   "configurations": [
     {
-      "name": "windows-gcc-x64",
+      "cStandard": "${default}",
+      "compilerArgs": [],
+      "compilerPath": "C:/Program Files/CodeBlocks/MinGW/bin/gcc.exe",
+      "cppStandard": "${default}",
+      "defines": [
+        "TYPED_METHOD_BIND",
+        "HOT_RELOAD_ENABLED",
+        "_WINDLL"
+      ],
+      "forcedInclude": [
+        "JenovaSDK.h"
+      ],
       "includePath": [
         "${workspaceFolder}/**"
       ],
-      "compilerPath": "C:/Program Files/CodeBlocks/MinGW/bin/gcc.exe",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
       "intelliSenseMode": "windows-gcc-x64",
-      "compilerArgs": [
-        ""
-      ]
+      "name": "windows-gcc-x64"
     }
   ],
   "version": 4

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bns7slrmwxw8j"
-path="res://.godot/imported/Gas_start.png-caaea923c0a66ec19ad4d66b668fc92e.ctex"
+path="res://.godot/imported/Gas_start.png-cda6c7bd61ed9b1683f6eb9ddf259cff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/Factory/Objects/Gas_start.png"
-dest_files=["res://.godot/imported/Gas_start.png-caaea923c0a66ec19ad4d66b668fc92e.ctex"]
+source_file="res://assets/tile sets/Factory/Objects/Gas_start.png"
+dest_files=["res://.godot/imported/Gas_start.png-cda6c7bd61ed9b1683f6eb9ddf259cff.ctex"]
 
 [params]
 

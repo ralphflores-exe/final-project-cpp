@@ -1,6 +1,4 @@
-res://Levels/level_3.tscn
+res://src/player.cpp
+res://Scenes/player.tscn
 res://gdshader.gdshader
-res://Scenes/saw2.tscn
-res://Levels/level_0.tscn
-res://Levels/level_1.tscn
-res://Levels/level_2.tscn
+res://scripts/killzone.gd

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd46cucnvt13d"
-path="res://.godot/imported/Walk.png-f519573e3ca8c321c34d1440bd4115f0.ctex"
+path="res://.godot/imported/Walk.png-0a01b4c1ddb9439b9eb96cd6f759160c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/Drones/4/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-f519573e3ca8c321c34d1440bd4115f0.ctex"]
+source_file="res://assets/tile sets/Drones/4/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-0a01b4c1ddb9439b9eb96cd6f759160c.ctex"]
 
 [params]
 

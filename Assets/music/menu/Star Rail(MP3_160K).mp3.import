@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dbxmqmwa3wuqb"
-path="res://.godot/imported/Star Rail(MP3_160K).mp3-0c7d6edcb3d2a923d4c08919635446a1.mp3str"
+path="res://.godot/imported/Star Rail(MP3_160K).mp3-7506b5fd911c13b442fb4ace48639487.mp3str"
 
 [deps]
 
-source_file="res://Assets/music/menu/Star Rail(MP3_160K).mp3"
-dest_files=["res://.godot/imported/Star Rail(MP3_160K).mp3-0c7d6edcb3d2a923d4c08919635446a1.mp3str"]
+source_file="res://assets/music/menu/Star Rail(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Star Rail(MP3_160K).mp3-7506b5fd911c13b442fb4ace48639487.mp3str"]
 
 [params]
 

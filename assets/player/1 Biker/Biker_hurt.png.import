@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dukm0426c0ett"
-path="res://.godot/imported/Biker_hurt.png-d838443ba0846e266b39657be51a9edb.ctex"
+path="res://.godot/imported/Biker_hurt.png-cb5221c5f031ea2acdc8d92ed4074f8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player/1 Biker/Biker_hurt.png"
-dest_files=["res://.godot/imported/Biker_hurt.png-d838443ba0846e266b39657be51a9edb.ctex"]
+source_file="res://assets/player/1 Biker/Biker_hurt.png"
+dest_files=["res://.godot/imported/Biker_hurt.png-cb5221c5f031ea2acdc8d92ed4074f8a.ctex"]
 
 [params]
 

@@ -23,7 +23,7 @@ TransitionManager="*res://Scripts/TransitionManager.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/gdscript2all/plugin.cfg")
 
 [gui]
 

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://clf0bajwi0sfv"
-path="res://.godot/imported/retro-coin-4-236671.mp3-708ab5f638452309044d0994697b457d.mp3str"
+path="res://.godot/imported/retro-coin-4-236671.mp3-1c2048c2a85db03489406f5e894806db.mp3str"
 
 [deps]
 
-source_file="res://Assets/audio/retro-coin-4-236671.mp3"
-dest_files=["res://.godot/imported/retro-coin-4-236671.mp3-708ab5f638452309044d0994697b457d.mp3str"]
+source_file="res://assets/audio/retro-coin-4-236671.mp3"
+dest_files=["res://.godot/imported/retro-coin-4-236671.mp3-1c2048c2a85db03489406f5e894806db.mp3str"]
 
 [params]
 
