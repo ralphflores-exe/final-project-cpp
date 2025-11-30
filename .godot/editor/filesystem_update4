@@ -1,4 +1,4 @@
-res://src/player.cpp
-res://Scenes/player.tscn
+res://src/portal.cpp
+res://src/portal.hpp
+res://scenes/portal.tscn
 res://gdshader.gdshader
-res://scripts/killzone.gd

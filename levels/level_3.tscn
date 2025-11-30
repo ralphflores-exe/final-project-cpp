@@ -1,10 +1,9 @@
-[gd_scene load_steps=37 format=3 uid="uid://bv7lkdkl8wft7"]
+[gd_scene load_steps=36 format=3 uid="uid://bv7lkdkl8wft7"]
 
 [ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tiles/Tileset.png" id="1_cb8d3"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_5lru4"]
 [ext_resource type="Texture2D" uid="uid://tx3nyb5nuju" path="res://assets/tile sets/Factory/Background/Background.png" id="2_absw3"]
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="3_ej5lj"]
 [ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="5_padch"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="7_ay5qi"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_fa81k"]
@@ -458,7 +457,6 @@ position = Vector2(21, -447)
 
 [node name="Player" parent="." instance=ExtResource("2_5lru4")]
 position = Vector2(83, -80)
-script = ExtResource("3_ej5lj")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)

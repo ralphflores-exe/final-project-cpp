@@ -33,7 +33,7 @@
 		<IntDir>.jenova\VisualStudio\</IntDir>
 		<BuiltInDir>.jenova\BuiltInScripts\</BuiltInDir>
 		<TargetExt>.dll</TargetExt>
-		<JenovaConfiguration>eNp1kUFPAjEQhe/8ik3PZl0gGOINWTSrIMRVLq4xpR1wdGk309aEEP673TYaDJo0Pbz3zZuZdt9JEjaSEi1qxescGlASlEAw7DJh7Oy3XyhROwk5Egir6R9qiivitPuTunJYW1QLbt9aMX0HpT95VQW9UKUgbKypqkjfgALiFnJYuU2h1pq2vO3hSy05CEyhLNAWJHruJHaJxvG6tE6i/g6dO9s4e4JGc0HQkBZgjKYc1qjCTmGB28n9fDl6HT+Vj/NZpB+csriFJZCJU7Es7afDNIt2md9NUX2g2sy0BG9nUQ5LTnypjW/z7NUk2Yf7x7/Gui1hhsR5U/MdUCqaJgQfUYX/LZ+za8mLruzxAc96oi9lz5/VYMgCfvD3y1FvM9Z+cl/T7Ry+ALT5n+w=</JenovaConfiguration>
+		<JenovaConfiguration>eNqFkdFPwjAQxt/5K5Y9kzk3gekbMjRTEOKUFzGmtAeejna5tiaE8L/bbWowaEiae/i+333Xa7ctz/P7QqBBJVmRQglSgOQI2r/wfL/9288kL6yAFAm4UfQPNcIFMdr8SV1aLAzKKTOvlRi8gVQfbD6v9UzmnLA0ej5v6GuQQMxACgu7yuRS0ZpVM1yrIQs1k0kDtAaBjjuInaG2rMiNFai+QyfWlNYcoI05JShJcdBaUQpLlPVO9QI3w7vJrP8yeMwfJuOGvrfS4BpmQLq5lR8GcZAEYWPn6e0I5TvK1VgJcHbYyPWSQ9dqmrd5cqrnbev6419hUbX4mvhJWbANUMDLsg7eozL3Wy5nU5HdUxGxDgsjHgsRubPoJH6N79pHJygyrDg2QSRncXi+5L2km0Q9iCPg3a8Jrj7vbacHyr2N64lau0/kAroa</JenovaConfiguration>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
@@ -69,6 +69,9 @@
 	<ItemGroup>
 		<ClCompile Include="src\player.cpp">
 			<UniqueIdentity>61d2a5a02c3dd2dd2b58</UniqueIdentity>
+		</ClCompile>
+		<ClCompile Include="src\portal.cpp">
+			<UniqueIdentity>d84309fc786827e32ec6</UniqueIdentity>
 		</ClCompile>
 	</ItemGroup>
 	<Target Name="JenovaPreBuild" BeforeTargets="JenovaBuild">

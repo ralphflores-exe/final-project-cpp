@@ -1,17 +1,16 @@
-[gd_scene load_steps=34 format=3 uid="uid://dw1t1ptrec4b4"]
+[gd_scene load_steps=33 format=3 uid="uid://dw1t1ptrec4b4"]
 
-[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://Scenes/hud.tscn" id="1_qeqk5"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="2_1soli"]
-[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://Assets/tile sets/Factory/Objects/Saw.png" id="3_4pbjs"]
-[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://Scenes/player.tscn" id="4_lmqi1"]
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://Scripts/player.gd" id="5_5yfph"]
-[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://Scenes/saw2.tscn" id="6_w6yvm"]
-[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://Scripts/killzone.gd" id="7_jcvcn"]
-[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://Scenes/killzone.tscn" id="8_0ttnk"]
-[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://Scenes/label.tscn" id="9_v3vm6"]
-[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://Scenes/key.tscn" id="10_16yl7"]
-[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://Scenes/portal.tscn" id="11_3slvs"]
-[ext_resource type="AudioStream" uid="uid://brmujris3y5ck" path="res://Assets/music/lvl/chill-drum-loop-6887.mp3" id="12_1soli"]
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_qeqk5"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_1soli"]
+[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://assets/tile sets/Factory/Objects/Saw.png" id="3_4pbjs"]
+[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="4_lmqi1"]
+[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="6_w6yvm"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://scripts/killzone.gd" id="7_jcvcn"]
+[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_0ttnk"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="9_v3vm6"]
+[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="10_16yl7"]
+[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="11_3slvs"]
+[ext_resource type="AudioStream" uid="uid://brmujris3y5ck" path="res://assets/music/lvl/chill-drum-loop-6887.mp3" id="12_1soli"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahc55"]
 texture = ExtResource("2_1soli")
@@ -265,7 +264,6 @@ layer_1/tile_data = PackedInt32Array(-131074, 524288, 4, -65537, 524288, 4, -655
 
 [node name="Player" parent="." instance=ExtResource("4_lmqi1")]
 position = Vector2(1, 33)
-script = ExtResource("5_5yfph")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(1, -14)

@@ -1,9 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bu1ifdhwf460x"]
+[gd_scene load_steps=13 format=3 uid="uid://bu1ifdhwf460x"]
 
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_f4pg2"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="3_62b6n"]
-[ext_resource type="Script" uid="uid://br34vcypv7mul" path="res://src/player.cpp" id="4_f4pg2"]
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="5_lk57d"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="6_2hkqn"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="7_34erp"]
@@ -117,7 +116,6 @@ layer_1/tile_data = PackedInt32Array(458740, 131072, 4, 458741, 131072, 4, 45874
 
 [node name="Player" parent="." instance=ExtResource("3_62b6n")]
 position = Vector2(44, -49)
-script = ExtResource("4_f4pg2")
 
 [node name="Portal" parent="." instance=ExtResource("5_lk57d")]
 position = Vector2(314, -160)
