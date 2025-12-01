@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bv7lkdkl8wft7"]
+[gd_scene load_steps=37 format=3 uid="uid://bv7lkdkl8wft7"]
 
 [ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tiles/Tileset.png" id="1_cb8d3"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="9_trpa2"]
 [ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="10_4t7ew"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="11_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="12_7cdb2"]
 [ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay5qi"]
@@ -597,3 +598,11 @@ offset_bottom = -431.0
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_oojpf")
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("12_7cdb2")]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = 5.0

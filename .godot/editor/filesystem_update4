@@ -1,4 +1,3 @@
-res://src/portal.cpp
-res://src/portal.hpp
-res://scenes/portal.tscn
+res://Levels/level_3.tscn
 res://gdshader.gdshader
+res://src/player.cpp
