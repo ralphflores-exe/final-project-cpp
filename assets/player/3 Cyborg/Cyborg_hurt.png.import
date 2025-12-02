@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhd6spcdri15o"
-path="res://.godot/imported/Cyborg_hurt.png-0a0e6405308182f8c0804fa6e893f4fc.ctex"
+path="res://.godot/imported/Cyborg_hurt.png-f268adb11265d9c6054f4b00698ff0e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/3 Cyborg/Cyborg_hurt.png"
-dest_files=["res://.godot/imported/Cyborg_hurt.png-0a0e6405308182f8c0804fa6e893f4fc.ctex"]
+source_file="res://Assets/player/3 Cyborg/Cyborg_hurt.png"
+dest_files=["res://.godot/imported/Cyborg_hurt.png-f268adb11265d9c6054f4b00698ff0e8.ctex"]
 
 [params]
 

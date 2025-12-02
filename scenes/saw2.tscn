@@ -1,40 +1,54 @@
-[gd_scene load_steps=7 format=3 uid="uid://bx8xedd4abeif"]
+[gd_scene load_steps=9 format=3 uid="uid://bx8xedd4abeif"]
 
-[ext_resource type="Texture2D" uid="uid://cequnpsr7gj2y" path="res://Assets/tile sets/Factory/Objects/Saw.png" id="1_epgth"]
+[ext_resource type="Texture2D" uid="uid://pgb63xhyesvf" path="res://Assets/tile sets/Factory/Saw.png" id="1_lpr5y"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_epgth"]
-atlas = ExtResource("1_epgth")
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e41y"]
+atlas = ExtResource("1_lpr5y")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plboh"]
+atlas = ExtResource("1_lpr5y")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tdct"]
+atlas = ExtResource("1_lpr5y")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3rqbh"]
-atlas = ExtResource("1_epgth")
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt1y8"]
+atlas = ExtResource("1_lpr5y")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5h51y"]
-atlas = ExtResource("1_epgth")
+[sub_resource type="AtlasTexture" id="AtlasTexture_id4g1"]
+atlas = ExtResource("1_lpr5y")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b5rph"]
-atlas = ExtResource("1_epgth")
+[sub_resource type="AtlasTexture" id="AtlasTexture_8skmc"]
+atlas = ExtResource("1_lpr5y")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3pt35"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_epgth")
+"texture": SubResource("AtlasTexture_3e41y")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3rqbh")
+"texture": SubResource("AtlasTexture_plboh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5h51y")
+"texture": SubResource("AtlasTexture_7tdct")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b5rph")
+"texture": SubResource("AtlasTexture_rt1y8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_id4g1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8skmc")
 }],
 "loop": true,
-"name": &"Saw",
+"name": &"new_animation",
 "speed": 5.0
 }]
 
@@ -42,6 +56,6 @@ animations = [{
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3pt35")
-animation = &"Saw"
-autoplay = "Saw"
-frame_progress = 0.08396101
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.9039165

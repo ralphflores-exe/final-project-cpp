@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://btj0nbqpy563b"
-path="res://.godot/imported/ambient-cave-31540.mp3-54843ec7166c8e6a61f1ed411b9ac5e1.mp3str"
+path="res://.godot/imported/ambient-cave-31540.mp3-a1d2c90c35fccce47f3b8665f55ecb59.mp3str"
 
 [deps]
 
-source_file="res://assets/music/lvl/ambient-cave-31540.mp3"
-dest_files=["res://.godot/imported/ambient-cave-31540.mp3-54843ec7166c8e6a61f1ed411b9ac5e1.mp3str"]
+source_file="res://Assets/music/lvl/ambient-cave-31540.mp3"
+dest_files=["res://.godot/imported/ambient-cave-31540.mp3-a1d2c90c35fccce47f3b8665f55ecb59.mp3str"]
 
 [params]
 

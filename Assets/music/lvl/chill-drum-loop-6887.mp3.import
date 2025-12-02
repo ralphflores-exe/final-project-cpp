@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://brmujris3y5ck"
-path="res://.godot/imported/chill-drum-loop-6887.mp3-452d07fc375213632f30c4249a7b4b59.mp3str"
+path="res://.godot/imported/chill-drum-loop-6887.mp3-af87b0fc16c94e655dcf06c2a6dff025.mp3str"
 
 [deps]
 
-source_file="res://assets/music/lvl/chill-drum-loop-6887.mp3"
-dest_files=["res://.godot/imported/chill-drum-loop-6887.mp3-452d07fc375213632f30c4249a7b4b59.mp3str"]
+source_file="res://Assets/music/lvl/chill-drum-loop-6887.mp3"
+dest_files=["res://.godot/imported/chill-drum-loop-6887.mp3-af87b0fc16c94e655dcf06c2a6dff025.mp3str"]
 
 [params]
 

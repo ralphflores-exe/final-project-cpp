@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnveeabo4ti6n"
-path="res://.godot/imported/Cyborg_idle.png-6d27e8aa8caf79523d85897a023a39ce.ctex"
+path="res://.godot/imported/Cyborg_idle.png-df25c5710975634494ebb606433afdc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/3 Cyborg/Cyborg_idle.png"
-dest_files=["res://.godot/imported/Cyborg_idle.png-6d27e8aa8caf79523d85897a023a39ce.ctex"]
+source_file="res://Assets/player/3 Cyborg/Cyborg_idle.png"
+dest_files=["res://.godot/imported/Cyborg_idle.png-df25c5710975634494ebb606433afdc2.ctex"]
 
 [params]
 

@@ -9,9 +9,7 @@ const JUMP_VELOCITY = -280.0
 @onready var run: AudioStreamPlayer2D = $run
 
 func _physics_process(delta: float) -> void:
-	if TransitionManager.input_blocked:
-		return
-		
+
 	if GameState.dead:
 		# Stop horizontal movement, but allow vertical (gravity) to continue
 		velocity.x = 0

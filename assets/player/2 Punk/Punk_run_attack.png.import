@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tofdgfrklpaa"
-path="res://.godot/imported/Punk_run_attack.png-20a4945e771d0221afc5618ad5d795e9.ctex"
+path="res://.godot/imported/Punk_run_attack.png-0c0d8aefa25db503c81c2c4b516f6432.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/2 Punk/Punk_run_attack.png"
-dest_files=["res://.godot/imported/Punk_run_attack.png-20a4945e771d0221afc5618ad5d795e9.ctex"]
+source_file="res://Assets/player/2 Punk/Punk_run_attack.png"
+dest_files=["res://.godot/imported/Punk_run_attack.png-0c0d8aefa25db503c81c2c4b516f6432.ctex"]
 
 [params]
 

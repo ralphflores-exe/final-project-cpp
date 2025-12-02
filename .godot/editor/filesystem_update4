@@ -1,3 +1,6 @@
-res://scenes/transition.tscn
-res://scripts/LevelManager.gd
-res://Scenes/transition.tscn
+res://Scenes/player.tscn
+res://src/gameManager.cpp
+res://Scripts/player.gd
+res://Levels/level_3.tscn
+res://levels/level_4.tscn
+res://Scenes/saw2.tscn

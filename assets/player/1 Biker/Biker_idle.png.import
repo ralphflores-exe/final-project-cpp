@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyby560qqlwu5"
-path="res://.godot/imported/Biker_idle.png-1e309d57a47ed6d055038c150dec53dc.ctex"
+path="res://.godot/imported/Biker_idle.png-d93dd46fa7166f4a5538976fc758ec93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/1 Biker/Biker_idle.png"
-dest_files=["res://.godot/imported/Biker_idle.png-1e309d57a47ed6d055038c150dec53dc.ctex"]
+source_file="res://Assets/player/1 Biker/Biker_idle.png"
+dest_files=["res://.godot/imported/Biker_idle.png-d93dd46fa7166f4a5538976fc758ec93.ctex"]
 
 [params]
 

@@ -1,17 +1,18 @@
-[gd_scene load_steps=37 format=3 uid="uid://bv7lkdkl8wft7"]
+[gd_scene load_steps=39 format=3 uid="uid://bv7lkdkl8wft7"]
 
-[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tiles/Tileset.png" id="1_cb8d3"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
-[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_5lru4"]
-[ext_resource type="Texture2D" uid="uid://tx3nyb5nuju" path="res://assets/tile sets/Factory/Background/Background.png" id="2_absw3"]
-[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="5_padch"]
-[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="7_ay5qi"]
-[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_fa81k"]
-[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="9_trpa2"]
-[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="10_4t7ew"]
-[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="11_4t7ew"]
-[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="12_7cdb2"]
-[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
+[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://Assets/tile sets/Factory/Tileset.png" id="1_cb8d3"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
+[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://Scenes/player.tscn" id="2_5lru4"]
+[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="5_7cdb2"]
+[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://Scenes/platform.tscn" id="5_padch"]
+[ext_resource type="Texture2D" uid="uid://1qqvkpl2q5k6" path="res://Assets/tile sets/Factory/Background.png" id="6_2urlj"]
+[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://Scenes/key.tscn" id="7_ay5qi"]
+[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://Scenes/killzone.tscn" id="8_fa81k"]
+[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://Scenes/portal.tscn" id="9_trpa2"]
+[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://Scenes/saw2.tscn" id="10_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://Scenes/label.tscn" id="11_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://Scenes/hud.tscn" id="12_7cdb2"]
+[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://Assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay5qi"]
 texture = ExtResource("1_uwxw1")
@@ -399,6 +400,9 @@ _data = {
 &"move": SubResource("Animation_4t7ew")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_oojpf"]
+radius = 15.652537
+
 [sub_resource type="Curve2D" id="Curve2D_trpa2"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 1337, -44, 0, 0, 0, 0, 1379, -63, 0, 0, 0, 0, 1379, -151, 0, 0, 0, 0, 1337, -174, 0, 0, 0, 0, 1301, -152, 0, 0, 0, 0, 1302, -64, 0, 0, 0, 0, 1337, -44)
@@ -458,6 +462,7 @@ position = Vector2(21, -447)
 
 [node name="Player" parent="." instance=ExtResource("2_5lru4")]
 position = Vector2(83, -80)
+script = ExtResource("5_7cdb2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
@@ -470,7 +475,7 @@ z_index = -1
 texture_filter = 1
 position = Vector2(-1.335144e-05, 35.699993)
 scale = Vector2(0.6666667, 0.6666667)
-texture = ExtResource("2_absw3")
+texture = ExtResource("6_2urlj")
 offset = Vector2(0, -53.55)
 
 [node name="Drone" parent="." instance=ExtResource("5_padch")]
@@ -570,6 +575,11 @@ autoplay = "RESET"
 position = Vector2(1337, -44)
 rotation = -0.42483217
 scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Killzone" parent="AnimatableBody2D" instance=ExtResource("8_fa81k")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Killzone"]
+shape = SubResource("CircleShape2D_oojpf")
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_trpa2")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ru7eks407x25"
-path="res://.godot/imported/Idle.png-7e8c8665958083d8ffcb9f08aa0156cc.ctex"
+path="res://.godot/imported/Idle.png-589412037d4c3eb60f54e5473dedeb05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile sets/Drones/5_2/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-7e8c8665958083d8ffcb9f08aa0156cc.ctex"]
+source_file="res://Assets/tile sets/Drones/5_2/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-589412037d4c3eb60f54e5473dedeb05.ctex"]
 
 [params]
 
