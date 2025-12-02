@@ -19,7 +19,10 @@ config/icon="res://icon.svg"
 
 GameState="*res://Scripts/GameState.gd"
 LevelManager="*res://Scripts/LevelManager.gd"
-TransitionManager="*res://Scripts/TransitionManager.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
