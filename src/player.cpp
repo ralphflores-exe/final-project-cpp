@@ -70,6 +70,9 @@ void OnPhysicsProcess(Caller* instance, double _delta)
 	if (dead)
 	{
 		vel.x = 0;
+		if (runSound->is_playing()) {
+			runSound->stop();
+		}
 
 		if (!thisNode->is_on_floor())
 			vel += thisNode->get_gravity() * _delta;

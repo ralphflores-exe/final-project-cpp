@@ -1,8 +1,3 @@
-res://Levels/level_2.tscn
+res://src/player.cpp
 res://Levels/level_0.tscn
-res://scripts/LevelManager.gd
-res://src/mainMenu.cpp
-res://Scenes/player.tscn
 res://levels/level_4.tscn
-res://Levels/level_1.tscn
-res://Levels/level_3.tscn

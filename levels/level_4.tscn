@@ -1077,7 +1077,7 @@ position = Vector2(2043, 160)
 position = Vector2(686, -127)
 shape = SubResource("RectangleShape2D_kiqbd")
 
-[node name="Portal2" parent="." instance=ExtResource("14_8mt0c")]
+[node name="Portal" parent="." instance=ExtResource("14_8mt0c")]
 position = Vector2(2593, -158)
 
 [node name="spawn" type="AudioStreamPlayer2D" parent="."]
