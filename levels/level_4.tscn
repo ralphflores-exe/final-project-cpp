@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://bi2f26jkngbvn"]
+[gd_scene load_steps=61 format=3 uid="uid://bi2f26jkngbvn"]
 
 [ext_resource type="Texture2D" uid="uid://bs3vvunhcf3ss" path="res://assets/tile sets/PowerStation/Tileset.png" id="1_b15rf"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_dmnu2"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cpcvpwo5kto62" path="res://assets/tile sets/PowerStation/Day/2.png" id="4_dmnu2"]
 [ext_resource type="Texture2D" uid="uid://f0u3e1tn13fa" path="res://assets/tile sets/PowerStation/Day/3.png" id="5_sc6c1"]
 [ext_resource type="Texture2D" uid="uid://8h7tcb5uw8or" path="res://assets/tile sets/PowerStation/Day/5.png" id="7_04hp8"]
+[ext_resource type="Script" uid="uid://br34vcypv7mul" path="res://src/player.cpp" id="7_a7qdg"]
 [ext_resource type="PackedScene" uid="uid://cj03erp5k1rqy" path="res://scenes/ElecTrap.tscn" id="11_04hp8"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="12_8hlpj"]
 [ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="13_qhnv2"]
@@ -807,11 +808,12 @@ layer_1/tile_data = PackedInt32Array(-720831, 131072, 3, -786366, 196608, 2, -72
 
 [node name="Player" parent="." instance=ExtResource("2_s4mq8")]
 z_index = 4096
-position = Vector2(15, 0)
+position = Vector2(-5, -32)
+script = ExtResource("7_a7qdg")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -19)
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
 
 [node name="layer5" type="Parallax2D" parent="Player"]
 scroll_scale = Vector2(0.9, 0.9)

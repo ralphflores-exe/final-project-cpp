@@ -9,6 +9,8 @@
 #include <Godot/classes/scene_tree.hpp>
 #include <Godot/classes/engine.hpp>
 #include <Godot/classes/window.hpp>
+#include <Godot/classes/collision_shape2d.hpp>
+
 #include "src/gameManager.hpp"
 
 
@@ -27,6 +29,7 @@ AnimatedSprite2D* animation = nullptr;
 AudioStreamPlayer2D* runSound = nullptr;
 AudioStreamPlayer2D* jumpSound = nullptr;
 Node* my_autoload = nullptr;
+CollisionShape2D* shape = nullptr;
 
 // Routines
 void OnAwake(Caller* instance)
@@ -44,6 +47,8 @@ void OnReady(Caller* instance)
 	runSound = Object::cast_to<AudioStreamPlayer2D>(thisNode->find_child("run"));
 	jumpSound = Object::cast_to<AudioStreamPlayer2D>(thisNode->find_child("jump"));
 	my_autoload = Object::cast_to<Node>(GetTree()->get_root()->find_child("GameState", true, false));
+	shape = Object::cast_to<CollisionShape2D>(thisNode->find_child("CollisionShape2D"));
+
 
 }
 void OnProcess(Caller* instance, double _delta)
@@ -57,8 +62,9 @@ void OnPhysicsProcess(Caller* instance, double _delta)
 
 	Vector2 vel = thisNode->get_velocity();
 	Input* input = Input::get_singleton();
-
+	shape->set_disabled(false);
 	bool dead = false;
+
 	if (my_autoload)
 	{
 		Variant v = my_autoload->get("dead");
@@ -69,13 +75,14 @@ void OnPhysicsProcess(Caller* instance, double _delta)
 	// ----------------------
 	if (dead)
 	{
+		shape->set_disabled(true);
+
 		vel.x = 0;
+		vel.y = 0;
+
 		if (runSound->is_playing()) {
 			runSound->stop();
 		}
-
-		if (!thisNode->is_on_floor())
-			vel += thisNode->get_gravity() * _delta;
 
 		if (animation) animation->play("death");
 
@@ -97,7 +104,7 @@ void OnPhysicsProcess(Caller* instance, double _delta)
 	if (direction > 0) animation->set_flip_h(false);
 	else if (direction < 0) animation->set_flip_h(true);
 
-	if (!thisNode->is_on_floor()) animation->play("jump");
+	if (!input->is_action_just_pressed("jump") && !thisNode->is_on_floor()) animation->play("fall");
 	else if (direction == 0) animation->play("idle");
 	else animation->play("run");
 
