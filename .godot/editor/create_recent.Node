@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 CollisionShape2D
 AnimationPlayer
 Control
@@ -8,7 +9,6 @@ AnimatableBody2D
 TextureRect
 Camera2D
 TileMap
-AudioStreamPlayer2D
 RemoteTransform2D
 PathFollow2D
 Path2D

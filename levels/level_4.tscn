@@ -1,20 +1,37 @@
-[gd_scene load_steps=58 format=3 uid="uid://bi2f26jkngbvn"]
+[gd_scene load_steps=60 format=3 uid="uid://bi2f26jkngbvn"]
 
-[ext_resource type="Texture2D" uid="uid://bs3vvunhcf3ss" path="res://Assets/tile sets/PowerStation/Tileset.png" id="1_b15rf"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="2_dmnu2"]
-[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://Scenes/player.tscn" id="2_s4mq8"]
-[ext_resource type="Texture2D" uid="uid://qhbkb6o47pwj" path="res://Assets/tile sets/PowerStation/Day/1.png" id="3_0fd8o"]
-[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://Assets/tile sets/Factory/Tileset.png" id="3_sc6c1"]
-[ext_resource type="Texture2D" uid="uid://cpcvpwo5kto62" path="res://Assets/tile sets/PowerStation/Day/2.png" id="4_dmnu2"]
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="5_ng40l"]
-[ext_resource type="Texture2D" uid="uid://f0u3e1tn13fa" path="res://Assets/tile sets/PowerStation/Day/3.png" id="5_sc6c1"]
-[ext_resource type="Texture2D" uid="uid://8h7tcb5uw8or" path="res://Assets/tile sets/PowerStation/Day/5.png" id="7_04hp8"]
-[ext_resource type="PackedScene" uid="uid://cj03erp5k1rqy" path="res://Scenes/ElecTrap.tscn" id="11_04hp8"]
-[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://Scenes/killzone.tscn" id="12_8hlpj"]
-[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://Scenes/platform.tscn" id="13_qhnv2"]
-[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://Scenes/saw2.tscn" id="14_5oqfd"]
-[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://Scenes/portal.tscn" id="14_8mt0c"]
-[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://Scenes/key.tscn" id="14_vru0x"]
+[ext_resource type="Texture2D" uid="uid://bs3vvunhcf3ss" path="res://assets/tile sets/PowerStation/Tileset.png" id="1_b15rf"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_dmnu2"]
+[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_s4mq8"]
+[ext_resource type="Texture2D" uid="uid://qhbkb6o47pwj" path="res://assets/tile sets/PowerStation/Day/1.png" id="3_0fd8o"]
+[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tileset.png" id="3_sc6c1"]
+[ext_resource type="Texture2D" uid="uid://cpcvpwo5kto62" path="res://assets/tile sets/PowerStation/Day/2.png" id="4_dmnu2"]
+[ext_resource type="Texture2D" uid="uid://f0u3e1tn13fa" path="res://assets/tile sets/PowerStation/Day/3.png" id="5_sc6c1"]
+[ext_resource type="Texture2D" uid="uid://8h7tcb5uw8or" path="res://assets/tile sets/PowerStation/Day/5.png" id="7_04hp8"]
+[ext_resource type="PackedScene" uid="uid://cj03erp5k1rqy" path="res://scenes/ElecTrap.tscn" id="11_04hp8"]
+[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="12_8hlpj"]
+[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="13_qhnv2"]
+[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="14_5oqfd"]
+[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="14_8mt0c"]
+[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="14_vru0x"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="15_5oqfd"]
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="16_8mt0c"]
+[ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="17_dp2yl"]
+
+[sub_resource type="Animation" id="Animation_3ff1r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(735, -192)]
+}
 
 [sub_resource type="Animation" id="Animation_8mt0c"]
 resource_name = "new_animation"
@@ -31,21 +48,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(735, -192), Vector2(1015, -192), Vector2(1119, -298)]
-}
-
-[sub_resource type="Animation" id="Animation_3ff1r"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(735, -192)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cmohj"]
@@ -531,6 +533,21 @@ sources/0 = SubResource("TileSetAtlasSource_t0qhu")
 sources/1 = SubResource("TileSetAtlasSource_sc6c1")
 sources/2 = SubResource("TileSetAtlasSource_ng40l")
 
+[sub_resource type="Animation" id="Animation_5oqfd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(695, -643)]
+}
+
 [sub_resource type="Animation" id="Animation_vru0x"]
 resource_name = "new_animation"
 length = 3.0
@@ -546,21 +563,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(695, -643), Vector2(513, -643)]
-}
-
-[sub_resource type="Animation" id="Animation_5oqfd"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(695, -643)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8mt0c"]
@@ -584,6 +586,21 @@ size = Vector2(18, 9)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7qdg"]
 size = Vector2(16, 8)
 
+[sub_resource type="Animation" id="Animation_a7qdg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1188, -298)]
+}
+
 [sub_resource type="Animation" id="Animation_dp2yl"]
 resource_name = "new_animation"
 length = 3.0
@@ -601,8 +618,15 @@ tracks/0/keys = {
 "values": [Vector2(1188, -298), Vector2(1188, -541)]
 }
 
-[sub_resource type="Animation" id="Animation_a7qdg"]
-length = 0.001
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g1ha7"]
+_data = {
+&"RESET": SubResource("Animation_a7qdg"),
+&"new_animation": SubResource("Animation_dp2yl")
+}
+
+[sub_resource type="Animation" id="Animation_52a3b"]
+length = 5.0
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -610,16 +634,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1188, -298)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_g1ha7"]
-_data = {
-&"RESET": SubResource("Animation_a7qdg"),
-&"new_animation": SubResource("Animation_dp2yl")
+"values": [Vector2(1891, -39), Vector2(2192, -39)]
 }
 
 [sub_resource type="Animation" id="Animation_g1ha7"]
@@ -639,22 +657,6 @@ tracks/0/keys = {
 "values": [Vector2(1891, -39), Vector2(2193, -39)]
 }
 
-[sub_resource type="Animation" id="Animation_52a3b"]
-length = 5.0
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1891, -39), Vector2(2192, -39)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3ff1r"]
 _data = {
 &"RESET": SubResource("Animation_52a3b"),
@@ -663,6 +665,21 @@ _data = {
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8mt0c"]
 radius = 14.0
+
+[sub_resource type="Animation" id="Animation_bv8dl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1248, -296)]
+}
 
 [sub_resource type="Animation" id="Animation_cmohj"]
 resource_name = "new_animation"
@@ -681,7 +698,13 @@ tracks/0/keys = {
 "values": [Vector2(1248, -296), Vector2(1352, -192), Vector2(1461, -194)]
 }
 
-[sub_resource type="Animation" id="Animation_bv8dl"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uhmd0"]
+_data = {
+&"RESET": SubResource("Animation_bv8dl"),
+&"new_animation": SubResource("Animation_cmohj")
+}
+
+[sub_resource type="Animation" id="Animation_gu0mu"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -693,13 +716,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1248, -296)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uhmd0"]
-_data = {
-&"RESET": SubResource("Animation_bv8dl"),
-&"new_animation": SubResource("Animation_cmohj")
+"values": [Vector2(2230, -65)]
 }
 
 [sub_resource type="Animation" id="Animation_8c4vb"]
@@ -717,21 +734,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(2230, -65), Vector2(1868, -65)]
-}
-
-[sub_resource type="Animation" id="Animation_gu0mu"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2230, -65)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_25iwj"]
@@ -780,9 +782,6 @@ size = Vector2(414, 7)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Portal" parent="." instance=ExtResource("14_8mt0c")]
-position = Vector2(2586, -165)
-
 [node name="Saw" parent="." instance=ExtResource("14_5oqfd")]
 z_index = 4096
 position = Vector2(735, -192)
@@ -809,11 +808,10 @@ layer_1/tile_data = PackedInt32Array(-720831, 131072, 3, -786366, 196608, 2, -72
 [node name="Player" parent="." instance=ExtResource("2_s4mq8")]
 z_index = 4096
 position = Vector2(15, 0)
-script = ExtResource("5_ng40l")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -19)
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 
 [node name="layer5" type="Parallax2D" parent="Player"]
 scroll_scale = Vector2(0.9, 0.9)
@@ -1056,3 +1054,34 @@ position = Vector2(2043, 160)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone4"]
 position = Vector2(-1, -124)
 shape = SubResource("RectangleShape2D_kiqbd")
+
+[node name="Label" parent="." instance=ExtResource("15_5oqfd")]
+visible = false
+offset_left = 331.0
+offset_top = -706.0
+offset_right = 469.0
+offset_bottom = -698.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("16_8mt0c")]
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = 5.0
+
+[node name="Killzone5" parent="." instance=ExtResource("12_8hlpj")]
+position = Vector2(2043, 160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone5"]
+position = Vector2(686, -127)
+shape = SubResource("RectangleShape2D_kiqbd")
+
+[node name="Portal2" parent="." instance=ExtResource("14_8mt0c")]
+position = Vector2(2593, -158)
+
+[node name="spawn" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_dp2yl")
+volume_db = 8.0
+autoplay = true
+bus = &"SFX"

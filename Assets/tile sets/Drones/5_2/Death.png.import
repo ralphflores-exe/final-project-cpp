@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgiiyto6oewpx"
-path="res://.godot/imported/Death.png-3039a5d7837b22fcee3c586e776887a2.ctex"
+path="res://.godot/imported/Death.png-6958073fcf2f14a91d8f0e383d99e576.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/Drones/5_2/Death.png"
-dest_files=["res://.godot/imported/Death.png-3039a5d7837b22fcee3c586e776887a2.ctex"]
+source_file="res://assets/tile sets/Drones/5_2/Death.png"
+dest_files=["res://.godot/imported/Death.png-6958073fcf2f14a91d8f0e383d99e576.ctex"]
 
 [params]
 

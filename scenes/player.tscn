@@ -1,13 +1,13 @@
 [gd_scene load_steps=32 format=3 uid="uid://c64apnm77bvxd"]
 
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://Scripts/player.gd" id="1_8erm5"]
-[ext_resource type="Texture2D" uid="uid://cib0jtr8d4gd2" path="res://Assets/player/2 Punk/Punk_death.png" id="1_dqkch"]
-[ext_resource type="Texture2D" uid="uid://bfo5e53k2rkfe" path="res://Assets/player/2 Punk/Punk_idle.png" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://5vmc0icccrta" path="res://Assets/player/2 Punk/Punk_jump.png" id="2_dqkch"]
-[ext_resource type="Texture2D" uid="uid://bg3mi88watwap" path="res://Assets/player/2 Punk/Punk_run.png" id="2_qhqgy"]
-[ext_resource type="Texture2D" uid="uid://tfjqc51sy6up" path="res://Assets/player/2 Punk/Punk_hurt.png" id="2_qlg0r"]
-[ext_resource type="AudioStream" uid="uid://cjf1a1r4eym32" path="res://Assets/audio/146726__leszek_szary__jumping.wav" id="6_tuyoq"]
-[ext_resource type="AudioStream" uid="uid://c0yjvwhtlio77" path="res://Assets/audio/54779__bevangoldswain__running-hard-surface.wav" id="7_fjrip"]
+[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="1_8erm5"]
+[ext_resource type="Texture2D" uid="uid://cib0jtr8d4gd2" path="res://assets/player/2 Punk/Punk_death.png" id="1_dqkch"]
+[ext_resource type="Texture2D" uid="uid://bfo5e53k2rkfe" path="res://assets/player/2 Punk/Punk_idle.png" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://5vmc0icccrta" path="res://assets/player/2 Punk/Punk_jump.png" id="2_dqkch"]
+[ext_resource type="Texture2D" uid="uid://bg3mi88watwap" path="res://assets/player/2 Punk/Punk_run.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://tfjqc51sy6up" path="res://assets/player/2 Punk/Punk_hurt.png" id="2_qlg0r"]
+[ext_resource type="AudioStream" uid="uid://cjf1a1r4eym32" path="res://assets/audio/146726__leszek_szary__jumping.wav" id="6_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://c0yjvwhtlio77" path="res://assets/audio/54779__bevangoldswain__running-hard-surface.wav" id="7_fjrip"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
 atlas = ExtResource("1_dqkch")
@@ -180,7 +180,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8erm5"]
-radius = 9.5
+radius = 7.5
 height = 33.5
 
 [node name="Player" type="CharacterBody2D"]

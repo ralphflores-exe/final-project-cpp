@@ -1,18 +1,18 @@
 [gd_scene load_steps=39 format=3 uid="uid://bv7lkdkl8wft7"]
 
-[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://Assets/tile sets/Factory/Tileset.png" id="1_cb8d3"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
-[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://Scenes/player.tscn" id="2_5lru4"]
-[ext_resource type="Script" uid="uid://chtgvnw8hbcof" path="res://scripts/player.gd" id="5_7cdb2"]
-[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://Scenes/platform.tscn" id="5_padch"]
-[ext_resource type="Texture2D" uid="uid://1qqvkpl2q5k6" path="res://Assets/tile sets/Factory/Background.png" id="6_2urlj"]
-[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://Scenes/key.tscn" id="7_ay5qi"]
-[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://Scenes/killzone.tscn" id="8_fa81k"]
-[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://Scenes/portal.tscn" id="9_trpa2"]
-[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://Scenes/saw2.tscn" id="10_4t7ew"]
-[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://Scenes/label.tscn" id="11_4t7ew"]
-[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://Scenes/hud.tscn" id="12_7cdb2"]
-[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://Assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
+[ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tileset.png" id="1_cb8d3"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
+[ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_5lru4"]
+[ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="5_padch"]
+[ext_resource type="Texture2D" uid="uid://1qqvkpl2q5k6" path="res://assets/tile sets/Factory/Background.png" id="6_2urlj"]
+[ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="7_ay5qi"]
+[ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_fa81k"]
+[ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="9_trpa2"]
+[ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="10_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="11_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="12_7cdb2"]
+[ext_resource type="AudioStream" uid="uid://dbxmqmwa3wuqb" path="res://assets/music/menu/Star Rail(MP3_160K).mp3" id="12_oojpf"]
+[ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="13_7cdb2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay5qi"]
 texture = ExtResource("1_uwxw1")
@@ -462,7 +462,6 @@ position = Vector2(21, -447)
 
 [node name="Player" parent="." instance=ExtResource("2_5lru4")]
 position = Vector2(83, -80)
-script = ExtResource("5_7cdb2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
@@ -616,3 +615,9 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+
+[node name="spawn" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_7cdb2")
+volume_db = 8.0
+autoplay = true
+bus = &"SFX"

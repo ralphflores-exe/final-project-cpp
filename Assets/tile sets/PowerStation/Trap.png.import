@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2vvvbop4l3v3"
-path="res://.godot/imported/Trap.png-8a41b9131c5fc5b177d59ed7aeb5e365.ctex"
+path="res://.godot/imported/Trap.png-c597af2357a60432da058bb6284de9ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tile sets/PowerStation/Trap.png"
-dest_files=["res://.godot/imported/Trap.png-8a41b9131c5fc5b177d59ed7aeb5e365.ctex"]
+source_file="res://assets/tile sets/PowerStation/Trap.png"
+dest_files=["res://.godot/imported/Trap.png-c597af2357a60432da058bb6284de9ce.ctex"]
 
 [params]
 

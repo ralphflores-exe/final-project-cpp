@@ -33,7 +33,7 @@
 		<IntDir>.jenova\VisualStudio\</IntDir>
 		<BuiltInDir>.jenova\BuiltInScripts\</BuiltInDir>
 		<TargetExt>.dll</TargetExt>
-		<JenovaConfiguration>eNqNkVFPwjAQx9/5FMueydwYDPANGZopCHHKg2JM197wpLRL15oQwne3bGowaDBp7uH+v7t/727bcBx3wBhqlILwGAoQDARFKN1zx3WbP/VEUG4YxKiAaqn+oMaYKaI2v1IXBrlGMSP6dZ/03kDId7JYVPlEpFRhocvFoqavQIAiGmLIzDIRuVRrsvewpVoZqJhEaFBrYGi5o7ZzLA3hqTYM5VfTqdGF0UdoLc4UFEpSKEupYshRVDNVA1yPbqfzwcvwIb2fTmr6zgiNa5iDKutfub4Xej3Pr+U0vhmjWKFYTiQDK/t1uhpyZEt1vZsnm3WcbRW/9Uvk+xK3VPRsSdYwIYIsQXm0KKruB2hiT2abbfY49PI8DEjY6VHW9bPA7+ddt8J3zVM2K+T8UQo45dEOIj/sd6I+Zf2o5bejIPq3R8HJ5vQUUcBapEP8Fg0Za9mXdXqfDjY+H6yxHEp7BFsTNnYfGS3WSw==</JenovaConfiguration>
+		<JenovaConfiguration>eNqNkcFOwkAQhu8+RdMzqaWlUrwhRVMVIaJcxJjt7hRH29lmu2tCCO/u0qrBqMFkM4f5v5l/Z2Zz5DjuUAjUKIkVCVRAAogj1O6p47qd73pKvDACElTAtVR/UNeYKabWv1JnBguNNGP6eZf0XoDkG1sum3xKc66w0vVy2dIXQKCYhgQys0opl6pkOw9bqpWBhklJgypBoOV+tF1gbVgx10ag/Gw6Nboy+gfaijMFlZIc6lqqBHKkZqZmgMvxzXQxfBrdz++mk5a+NaSxhAWouv2V63uhF3t+K8+Tq2ukV6TVRAqwst+mmyHHtlS3u3mwWcfZNPFLP8diV+LWih+vWAkTRmwFyuNV1XTfQ1N7MttsvcMhzvOwy8Io5qLvZ11/kPfdBt92DtmUDGkCZA559MKs7+c9HgVZFAwyP4/D8L8eVcHWh6c46YqARcwPeChEYF8WxR8ONj7urbEeSXsEWxMebd8BccPW7g==</JenovaConfiguration>
 	</PropertyGroup>
 	<ItemDefinitionGroup>
 		<ClCompile>
@@ -70,8 +70,8 @@
 		<ClCompile Include="src\gameManager.cpp">
 			<UniqueIdentity>e8ff31a358cd70b109f7</UniqueIdentity>
 		</ClCompile>
-		<ClCompile Include="src\killZone.cpp">
-			<UniqueIdentity>416039569cd962046167</UniqueIdentity>
+		<ClCompile Include="src\mainMenu.cpp">
+			<UniqueIdentity>43b70f4c52b529b0f833</UniqueIdentity>
 		</ClCompile>
 		<ClCompile Include="src\player.cpp">
 			<UniqueIdentity>61d2a5a02c3dd2dd2b58</UniqueIdentity>

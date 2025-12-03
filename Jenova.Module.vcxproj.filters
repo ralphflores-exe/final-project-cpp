@@ -9,7 +9,7 @@
     <ClCompile Include="src\gameManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\killZone.cpp">
+    <ClCompile Include="src\mainMenu.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\player.cpp">

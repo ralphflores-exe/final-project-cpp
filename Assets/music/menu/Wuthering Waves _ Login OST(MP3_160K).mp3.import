@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dlr4s1tmg7co6"
-path="res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-21b591ce09388646386b31f7cf50b188.mp3str"
+path="res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-6d15c63aa36c522a82e69135ad53f67e.mp3str"
 
 [deps]
 
-source_file="res://Assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3"
-dest_files=["res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-21b591ce09388646386b31f7cf50b188.mp3str"]
+source_file="res://assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Wuthering Waves _ Login OST(MP3_160K).mp3-6d15c63aa36c522a82e69135ad53f67e.mp3str"]
 
 [params]
 

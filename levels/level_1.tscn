@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bu1ifdhwf460x"]
+[gd_scene load_steps=14 format=3 uid="uid://bu1ifdhwf460x"]
 
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_f4pg2"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="7_34erp"]
 [ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="8_k2bse"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="9_c7pbv"]
+[ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="10_62b6n"]
 [ext_resource type="AudioStream" uid="uid://c4ge8ntjt8dm2" path="res://assets/music/lvl/time_for_adventure.mp3" id="10_f4pg2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhr6a"]
@@ -158,3 +159,9 @@ limit_bottom = 12
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_f4pg2")
 autoplay = true
+
+[node name="spawn" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_62b6n")
+volume_db = 8.0
+autoplay = true
+bus = &"SFX"

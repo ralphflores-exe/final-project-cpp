@@ -1,14 +1,14 @@
 [gd_scene load_steps=14 format=3 uid="uid://ce5mgp58b7tvr"]
 
-[ext_resource type="Script" uid="uid://bmkfjsib4qoiv" path="res://Scripts/level_0.gd" id="1_kiobq"]
-[ext_resource type="Texture2D" uid="uid://dm03uvyw8opr2" path="res://Assets/tile sets/Menu/Menu.png" id="2_75g3n"]
-[ext_resource type="StyleBox" uid="uid://5vay3jk44uvw" path="res://Assets/theme/Menu/hover_style_box_flat.tres" id="3_5ohqh"]
-[ext_resource type="StyleBox" uid="uid://cltmd0lgh0ssr" path="res://Assets/theme/Menu/new_style_box_flat.tres" id="4_g0qw3"]
-[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="5_hyv8f"]
-[ext_resource type="Texture2D" uid="uid://g12yyecvungx" path="res://Assets/tile sets/Menu/Logo2.png" id="6_6q0gy"]
-[ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://Assets/fonts/PixelOperator8.ttf" id="7_hp07x"]
-[ext_resource type="AudioStream" uid="uid://tnl15oc3k3ec" path="res://Assets/audio/171697__nenadsimic__menu-selection-click.wav" id="8_tbs4p"]
-[ext_resource type="AudioStream" uid="uid://dlr4s1tmg7co6" path="res://Assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3" id="9_75g3n"]
+[ext_resource type="Script" uid="uid://ldm7w7tnfa67" path="res://src/mainMenu.cpp" id="1_75g3n"]
+[ext_resource type="Texture2D" uid="uid://dm03uvyw8opr2" path="res://assets/tile sets/Menu/Menu.png" id="2_75g3n"]
+[ext_resource type="StyleBox" uid="uid://5vay3jk44uvw" path="res://assets/Theme/Menu/hover_style_box_flat.tres" id="3_5ohqh"]
+[ext_resource type="StyleBox" uid="uid://cltmd0lgh0ssr" path="res://assets/Theme/Menu/new_style_box_flat.tres" id="4_g0qw3"]
+[ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_hyv8f"]
+[ext_resource type="Texture2D" uid="uid://g12yyecvungx" path="res://assets/tile sets/Menu/Logo2.png" id="6_6q0gy"]
+[ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="7_hp07x"]
+[ext_resource type="AudioStream" uid="uid://tnl15oc3k3ec" path="res://assets/audio/171697__nenadsimic__menu-selection-click.wav" id="8_tbs4p"]
+[ext_resource type="AudioStream" uid="uid://dlr4s1tmg7co6" path="res://assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3" id="9_75g3n"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c4pne"]
 load_path = "res://.godot/imported/Background.png-c81a9eddb5d3978ef905fdcb8d4cfe29.ctex"
@@ -35,7 +35,6 @@ offset_right = -19.0
 offset_bottom = 69.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kiobq")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -88,11 +87,27 @@ theme_override_constants/separation = 32
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_hyv8f")
 text = "Start"
+script = ExtResource("1_75g3n")
+buttonState = 0
+
+[node name="clickSound" type="AudioStreamPlayer2D" parent="NinePatchRect/VBoxContainer/Start"]
+position = Vector2(-490, -282)
+stream = ExtResource("8_tbs4p")
+volume_db = 10.0
+bus = &"SFX"
 
 [node name="Quit" type="Button" parent="NinePatchRect/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_hyv8f")
 text = "Quit"
+script = ExtResource("1_75g3n")
+buttonState = 1
+
+[node name="clickSound" type="AudioStreamPlayer2D" parent="NinePatchRect/VBoxContainer/Quit"]
+position = Vector2(-490, -282)
+stream = ExtResource("8_tbs4p")
+volume_db = 10.0
+bus = &"SFX"
 
 [node name="Game Logo" type="TextureRect" parent="."]
 layout_mode = 1
@@ -142,14 +157,6 @@ limit_top = 69
 limit_right = 1133
 limit_bottom = 717
 
-[node name="pressSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_tbs4p")
-volume_db = 10.0
-bus = &"SFX"
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_75g3n")
 autoplay = true
-
-[connection signal="pressed" from="NinePatchRect/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="finished" from="pressSound" to="." method="_on_press_sound_finished"]

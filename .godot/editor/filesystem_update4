@@ -1,6 +1,8 @@
+res://Levels/level_2.tscn
+res://Levels/level_0.tscn
+res://scripts/LevelManager.gd
+res://src/mainMenu.cpp
 res://Scenes/player.tscn
-res://src/gameManager.cpp
-res://Scripts/player.gd
-res://Levels/level_3.tscn
 res://levels/level_4.tscn
-res://Scenes/saw2.tscn
+res://Levels/level_1.tscn
+res://Levels/level_3.tscn
