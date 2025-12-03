@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameState="*res://Scripts/GameState.gd"
 LevelManager="*res://Scripts/LevelManager.gd"
+Stopwatch="*res://scripts/stopwatch.gd"
 
 [display]
 
