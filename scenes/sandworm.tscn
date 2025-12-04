@@ -1,0 +1,95 @@
+[gd_scene load_steps=14 format=3 uid="uid://dm7hga30x6obk"]
+
+[ext_resource type="Texture2D" uid="uid://cw4fq3ewkfryu" path="res://assets/Sandworm Trap/PNGs/Sandworm trap - Level 1.png" id="1_hu3ph"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ublct"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4riq"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ubvr"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o867e"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_motqh"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs1cb"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnghf"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilkuy"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dglc"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vp0ye"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rphl6"]
+atlas = ExtResource("1_hu3ph")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ohnja"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ublct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4riq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ubvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o867e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_motqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs1cb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnghf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilkuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dglc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vp0ye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rphl6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ohnja")
+autoplay = "default"
+frame_progress = 0.7965774

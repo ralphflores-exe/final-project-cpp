@@ -1,8 +1,4 @@
-res://Levels/level_2.tscn
-res://scenes/hud.tscn
-res://scripts/hud.gd
-res://scripts/stopwatch.gd
-res://Levels/level_1.tscn
-res://scripts/level_1.gd
-res://scripts/level_4.gd
 res://levels/level_4.tscn
+res://levels/level_5.tscn
+res://scripts/key.gd
+res://scenes/sandworm.tscn

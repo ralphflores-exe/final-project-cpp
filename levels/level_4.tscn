@@ -1,6 +1,5 @@
-[gd_scene load_steps=61 format=3 uid="uid://bi2f26jkngbvn"]
+[gd_scene load_steps=60 format=3 uid="uid://bi2f26jkngbvn"]
 
-[ext_resource type="Script" uid="uid://crwcd3q2hku34" path="res://scripts/level_4.gd" id="1_a7qdg"]
 [ext_resource type="Texture2D" uid="uid://bs3vvunhcf3ss" path="res://assets/tile sets/PowerStation/Tileset.png" id="1_b15rf"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_dmnu2"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_s4mq8"]
@@ -60,7 +59,7 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_5oqfd"]
 radius = 14.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0qhu"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a7qdg"]
 texture = ExtResource("1_b15rf")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -357,7 +356,7 @@ texture = ExtResource("1_b15rf")
 6:8/size_in_atlas = Vector2i(2, 2)
 6:8/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sc6c1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1ha7"]
 texture = ExtResource("2_dmnu2")
 1:1/0 = 0
 2:1/0 = 0
@@ -410,7 +409,7 @@ texture = ExtResource("2_dmnu2")
 16:5/0 = 0
 18:5/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ng40l"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_52a3b"]
 texture = ExtResource("3_sc6c1")
 0:2/size_in_atlas = Vector2i(2, 2)
 0:2/0 = 0
@@ -530,9 +529,9 @@ texture = ExtResource("3_sc6c1")
 
 [sub_resource type="TileSet" id="TileSet_t6q73"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_t0qhu")
-sources/1 = SubResource("TileSetAtlasSource_sc6c1")
-sources/2 = SubResource("TileSetAtlasSource_ng40l")
+sources/0 = SubResource("TileSetAtlasSource_a7qdg")
+sources/1 = SubResource("TileSetAtlasSource_g1ha7")
+sources/2 = SubResource("TileSetAtlasSource_52a3b")
 
 [sub_resource type="Animation" id="Animation_5oqfd"]
 length = 0.001
@@ -782,7 +781,13 @@ size = Vector2(80, 11)
 size = Vector2(414, 7)
 
 [node name="Level 4" type="Node2D"]
-script = ExtResource("1_a7qdg")
+
+[node name="Label" parent="." instance=ExtResource("15_5oqfd")]
+visible = false
+offset_left = 326.0
+offset_top = -707.0
+offset_right = 464.0
+offset_bottom = -699.0
 
 [node name="Saw" parent="." instance=ExtResource("14_5oqfd")]
 z_index = 4096
@@ -1057,13 +1062,6 @@ position = Vector2(2043, 160)
 position = Vector2(-1, -124)
 shape = SubResource("RectangleShape2D_kiqbd")
 
-[node name="Label" parent="." instance=ExtResource("15_5oqfd")]
-visible = false
-offset_left = 331.0
-offset_top = -706.0
-offset_right = 469.0
-offset_bottom = -698.0
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Hud" parent="CanvasLayer" instance=ExtResource("16_8mt0c")]
@@ -1076,7 +1074,7 @@ offset_bottom = 5.0
 position = Vector2(2043, 160)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone5"]
-position = Vector2(686, -127)
+position = Vector2(779, -258)
 shape = SubResource("RectangleShape2D_kiqbd")
 
 [node name="Portal" parent="." instance=ExtResource("14_8mt0c")]
