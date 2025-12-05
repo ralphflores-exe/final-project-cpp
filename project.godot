@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 GameState="*res://Scripts/GameState.gd"
 LevelManager="*res://Scripts/LevelManager.gd"
 Stopwatch="*res://scripts/stopwatch.gd"
+FadeLayer="*res://scenes/fade_layer.tscn"
 
 [display]
 

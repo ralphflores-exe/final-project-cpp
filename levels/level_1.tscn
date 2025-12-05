@@ -161,6 +161,7 @@ limit_bottom = 12
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_f4pg2")
 autoplay = true
+bus = &"BGM"
 
 [node name="spawn" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_62b6n")

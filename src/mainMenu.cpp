@@ -1,4 +1,4 @@
-﻿/* Jenova C++ Default Script */
+/* Jenova C++ Default Script */
 
 // Godot SDK
 #include <Godot/godot.hpp>

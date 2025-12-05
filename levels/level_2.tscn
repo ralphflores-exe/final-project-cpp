@@ -420,6 +420,7 @@ autoplay = "SM2"
 position = Vector2(0, 4)
 stream = ExtResource("12_1soli")
 autoplay = true
+bus = &"BGM"
 
 [node name="spawn" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_4pbjs")

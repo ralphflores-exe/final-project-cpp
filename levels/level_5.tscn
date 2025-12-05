@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://em5fy6ww5mj8"]
+[gd_scene load_steps=35 format=3 uid="uid://em5fy6ww5mj8"]
 
 [ext_resource type="Texture2D" uid="uid://cu6gwy3ewjx5r" path="res://assets/tile sets/GandalfHardcore FREE Platformer Assets/Weeping Willow3.png" id="1_8vr3t"]
 [ext_resource type="Texture2D" uid="uid://cw6uekrfsbejl" path="res://assets/tile sets/GandalfHardcore FREE Platformer Assets/Tree1.png" id="1_26h77"]
@@ -27,8 +27,9 @@
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="25_aacai"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="26_pggb5"]
 [ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="27_pggb5"]
+[ext_resource type="AudioStream" uid="uid://d4dp3m50umc4u" path="res://assets/music/lvl/prime-facts7-nature-sound-mornings-291488.mp3" id="28_idjb0"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5ho1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idjb0"]
 texture = ExtResource("1_r02ll")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -319,7 +320,7 @@ texture_region_size = Vector2i(32, 32)
 8:17/0 = 0
 8:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ldpug"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wqug"]
 texture = ExtResource("2_26h77")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -611,7 +612,7 @@ texture_region_size = Vector2i(32, 32)
 8:17/0 = 0
 8:17/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8vr3t"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1a4ff"]
 texture = ExtResource("3_1y5xd")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -768,7 +769,7 @@ texture_region_size = Vector2i(32, 32)
 2:15/0 = 0
 3:15/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aacai"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5fr5s"]
 texture = ExtResource("19_mlk23")
 0:0/0 = 0
 1:0/0 = 0
@@ -807,10 +808,10 @@ texture = ExtResource("19_mlk23")
 [sub_resource type="TileSet" id="TileSet_a58qw"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_v5ho1")
-sources/1 = SubResource("TileSetAtlasSource_ldpug")
-sources/2 = SubResource("TileSetAtlasSource_8vr3t")
-sources/3 = SubResource("TileSetAtlasSource_aacai")
+sources/0 = SubResource("TileSetAtlasSource_idjb0")
+sources/1 = SubResource("TileSetAtlasSource_8wqug")
+sources/2 = SubResource("TileSetAtlasSource_1a4ff")
+sources/3 = SubResource("TileSetAtlasSource_5fr5s")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlk23"]
 size = Vector2(12, 17.375)
@@ -1002,3 +1003,35 @@ offset_bottom = 252.0
 theme_override_fonts/font = ExtResource("27_pggb5")
 theme_override_font_sizes/font_size = 8
 text = "Someone was here..."
+
+[node name="sandworm4" parent="." instance=ExtResource("23_b36k0")]
+position = Vector2(853, 336)
+
+[node name="Killzone" parent="sandworm4" instance=ExtResource("24_mlk23")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm4/Killzone"]
+position = Vector2(0, 3.6875)
+shape = SubResource("RectangleShape2D_mlk23")
+
+[node name="sandworm5" parent="." instance=ExtResource("23_b36k0")]
+position = Vector2(110, 272)
+
+[node name="Killzone" parent="sandworm5" instance=ExtResource("24_mlk23")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm5/Killzone"]
+position = Vector2(0, 3.6875)
+shape = SubResource("RectangleShape2D_mlk23")
+
+[node name="sandworm6" parent="." instance=ExtResource("23_b36k0")]
+position = Vector2(622, 561)
+
+[node name="Killzone" parent="sandworm6" instance=ExtResource("24_mlk23")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm6/Killzone"]
+position = Vector2(0, 3.6875)
+shape = SubResource("RectangleShape2D_mlk23")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_idjb0")
+autoplay = true
+bus = &"BGM"
