@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://pgb63xhyesvf" path="res://assets/tile sets/Factory/Saw.png" id="3_4pbjs"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="4_lmqi1"]
 [ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="6_w6yvm"]
-[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://scripts/killzone.gd" id="7_jcvcn"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="7_jcvcn"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_0ttnk"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="9_v3vm6"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="10_16yl7"]

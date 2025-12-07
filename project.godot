@@ -10,17 +10,17 @@ config_version=5
 
 [application]
 
-config/name="FinalProject"
+config/name="VoidJumper"
 run/main_scene="uid://ce5mgp58b7tvr"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-GameState="*res://Scripts/GameState.gd"
-LevelManager="*res://Scripts/LevelManager.gd"
-Stopwatch="*res://scripts/stopwatch.gd"
+Stopwatch="*res://gameEngine/stopwatch.gd"
 FadeLayer="*res://scenes/fade_layer.tscn"
+GameState="*res://gameEngine/GameState.gd"
+LevelManager="*res://gameEngine/LevelManager.gd"
 
 [display]
 

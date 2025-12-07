@@ -1,8 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://yx1n8vnvi1k0"]
 
-[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://Scripts/key.gd" id="1_fttkb"]
-[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://Assets/tile sets/Cave/tileset16x16.png" id="1_yk2u2"]
-[ext_resource type="AudioStream" uid="uid://clf0bajwi0sfv" path="res://Assets/audio/retro-coin-4-236671.mp3" id="3_wy8tx"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="1_fttkb"]
+[ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_yk2u2"]
+[ext_resource type="AudioStream" uid="uid://clf0bajwi0sfv" path="res://assets/audio/retro-coin-4-236671.mp3" id="3_wy8tx"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fttkb"]
 atlas = ExtResource("1_yk2u2")

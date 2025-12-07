@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://ce5mgp58b7tvr"]
 
-[ext_resource type="Script" uid="uid://ldm7w7tnfa67" path="res://src/mainMenu.cpp" id="1_75g3n"]
+[ext_resource type="Script" uid="uid://ldm7w7tnfa67" path="res://scripts/mainMenu.cpp" id="1_75g3n"]
 [ext_resource type="Texture2D" uid="uid://dm03uvyw8opr2" path="res://assets/tile sets/Menu/Menu.png" id="2_75g3n"]
 [ext_resource type="StyleBox" uid="uid://5vay3jk44uvw" path="res://assets/Theme/Menu/hover_style_box_flat.tres" id="3_5ohqh"]
 [ext_resource type="StyleBox" uid="uid://cltmd0lgh0ssr" path="res://assets/Theme/Menu/new_style_box_flat.tres" id="4_g0qw3"]
@@ -129,7 +129,7 @@ offset_right = 339.0
 offset_bottom = 85.0
 theme_override_fonts/font = ExtResource("5_hyv8f")
 theme_override_font_sizes/font_size = 24
-text = "RE:Awaken"
+text = "Void Jumper"
 horizontal_alignment = 1
 vertical_alignment = 1
 

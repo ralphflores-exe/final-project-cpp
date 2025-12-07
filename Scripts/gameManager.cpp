@@ -1,4 +1,4 @@
-#include "src/gameManager.hpp"
+#include "scripts/gameManager.hpp"
 
 // Allocate singleton
 GameManager* GMInstance = nullptr;

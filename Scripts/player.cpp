@@ -11,7 +11,7 @@
 #include <Godot/classes/window.hpp>
 #include <Godot/classes/collision_shape2d.hpp>
 
-#include "src/gameManager.hpp"
+#include "scripts/gameManager.hpp"
 
 
 #include <JenovaSDK.h>

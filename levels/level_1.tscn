@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://bu1ifdhwf460x"]
 
-[ext_resource type="Script" uid="uid://dk8y2puq701md" path="res://scripts/level_1.gd" id="1_62b6n"]
+[ext_resource type="Script" uid="uid://dk8y2puq701md" path="res://gameEngine/level_1.gd" id="1_62b6n"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_f4pg2"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="3_62b6n"]
