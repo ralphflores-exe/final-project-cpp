@@ -1,21 +1,13 @@
 [gd_scene load_steps=14 format=3 uid="uid://ce5mgp58b7tvr"]
 
-[ext_resource type="Script" uid="uid://ldm7w7tnfa67" path="res://scripts/mainMenu.cpp" id="1_75g3n"]
-[ext_resource type="Texture2D" uid="uid://dm03uvyw8opr2" path="res://assets/tile sets/Menu/Menu.png" id="2_75g3n"]
+[ext_resource type="Script" uid="uid://ldm7w7tnfa67" path="res://Scripts/mainMenu.cpp" id="1_75g3n"]
+[ext_resource type="Texture2D" uid="uid://ddl8rncr0jty7" path="res://assets/MainMenu.png" id="1_hordx"]
+[ext_resource type="Script" uid="uid://bmkfjsib4qoiv" path="res://gameEngine/level_0.gd" id="1_kiobq"]
 [ext_resource type="StyleBox" uid="uid://5vay3jk44uvw" path="res://assets/Theme/Menu/hover_style_box_flat.tres" id="3_5ohqh"]
 [ext_resource type="StyleBox" uid="uid://cltmd0lgh0ssr" path="res://assets/Theme/Menu/new_style_box_flat.tres" id="4_g0qw3"]
 [ext_resource type="FontFile" uid="uid://dlokdg2rjn0uw" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_hyv8f"]
-[ext_resource type="Texture2D" uid="uid://g12yyecvungx" path="res://assets/tile sets/Menu/Logo2.png" id="6_6q0gy"]
-[ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="7_hp07x"]
 [ext_resource type="AudioStream" uid="uid://tnl15oc3k3ec" path="res://assets/audio/171697__nenadsimic__menu-selection-click.wav" id="8_tbs4p"]
 [ext_resource type="AudioStream" uid="uid://dlr4s1tmg7co6" path="res://assets/music/menu/Wuthering Waves _ Login OST(MP3_160K).mp3" id="9_75g3n"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c4pne"]
-load_path = "res://.godot/imported/Background.png-c81a9eddb5d3978ef905fdcb8d4cfe29.ctex"
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ifpdw"]
-texture = SubResource("CompressedTexture2D_c4pne")
-modulate_color = Color(0.30692264, 0.3069227, 0.30692258, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_brbbq"]
 
@@ -23,6 +15,67 @@ modulate_color = Color(0.30692264, 0.3069227, 0.30692258, 1)
 Button/styles/focus = SubResource("StyleBoxEmpty_brbbq")
 Button/styles/hover = ExtResource("3_5ohqh")
 Button/styles/normal = ExtResource("4_g0qw3")
+
+[sub_resource type="Animation" id="Animation_75g3n"]
+resource_name = "fade_in"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainMenu:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.9666667, 3.9666667),
+"transitions": PackedFloat32Array(3, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.9666667, 5.9666667),
+"transitions": PackedFloat32Array(3, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5ohqh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainMenu:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("VBoxContainer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g0qw3"]
+_data = {
+&"RESET": SubResource("Animation_5ohqh"),
+&"fade_in": SubResource("Animation_75g3n")
+}
 
 [node name="Level 0" type="Control"]
 layout_mode = 3
@@ -35,128 +88,76 @@ offset_right = -19.0
 offset_bottom = 69.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_kiobq")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -99.0
+offset_right = 71.0
+offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_ifpdw")
+color = Color(0, 0, 0, 1)
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
+[node name="MainMenu" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(10, -71)
+scale = Vector2(0.42317703, 0.4231771)
+texture = ExtResource("1_hordx")
+centered = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_75g3n")
+autoplay = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -106.75
-offset_top = -88.1875
-offset_right = 106.75
-offset_bottom = 67.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_75g3n")
-region_rect = Rect2(0, 0, 96, 90)
-patch_margin_left = 6
-patch_margin_top = 8
-patch_margin_right = 6
-patch_margin_bottom = 6
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-
-[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -86.0
-offset_top = -31.40625
-offset_right = 85.0
-offset_bottom = 51.59375
+offset_left = -66.0
+offset_top = 97.0
+offset_right = 105.0
+offset_bottom = 180.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_62e2m")
 theme_override_constants/separation = 32
 
-[node name="Start" type="Button" parent="NinePatchRect/VBoxContainer"]
+[node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_hyv8f")
 text = "Start"
 script = ExtResource("1_75g3n")
 buttonState = 0
 
-[node name="clickSound" type="AudioStreamPlayer2D" parent="NinePatchRect/VBoxContainer/Start"]
+[node name="clickSound" type="AudioStreamPlayer2D" parent="VBoxContainer/Start"]
 position = Vector2(-490, -282)
 stream = ExtResource("8_tbs4p")
 volume_db = 10.0
 bus = &"SFX"
 
-[node name="Quit" type="Button" parent="NinePatchRect/VBoxContainer"]
+[node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_hyv8f")
 text = "Quit"
 script = ExtResource("1_75g3n")
 buttonState = 1
 
-[node name="clickSound" type="AudioStreamPlayer2D" parent="NinePatchRect/VBoxContainer/Quit"]
+[node name="clickSound" type="AudioStreamPlayer2D" parent="VBoxContainer/Quit"]
 position = Vector2(-490, -282)
 stream = ExtResource("8_tbs4p")
 volume_db = 10.0
 bus = &"SFX"
 
-[node name="Game Logo" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -169.0
-offset_top = 152.0
-offset_right = 180.0
-offset_bottom = 267.0
-grow_horizontal = 2
-texture = ExtResource("6_6q0gy")
-
-[node name="Game Title" type="Label" parent="Game Logo"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 2.0
-offset_right = 339.0
-offset_bottom = 85.0
-theme_override_fonts/font = ExtResource("5_hyv8f")
-theme_override_font_sizes/font_size = 24
-text = "Void Jumper"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Credits" type="Label" parent="Game Logo"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -43.5
-offset_top = 36.5
-offset_right = 43.5
-offset_bottom = 52.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("7_hp07x")
-text = "by Group 2"
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(570, 276)
-zoom = Vector2(1.5, 1.5)
-limit_left = -18
-limit_top = 69
-limit_right = 1133
-limit_bottom = 717
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_75g3n")
-autoplay = true
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_g0qw3")
+}

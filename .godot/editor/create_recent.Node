@@ -1,8 +1,10 @@
+Panel
+Label      - Matches the "text" keyword.
+ColorRect
+AnimationPlayer
 Label
 Sprite2D
 Parallax2D
-AnimationPlayer
-ColorRect
 CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
@@ -11,4 +13,3 @@ TileMap
 AudioStreamPlayer2D
 Control
 AnimatableBody2D
-TextureRect

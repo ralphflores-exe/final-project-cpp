@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://em5fy6ww5mj8"]
+[gd_scene load_steps=39 format=3 uid="uid://em5fy6ww5mj8"]
 
 [ext_resource type="Texture2D" uid="uid://cu6gwy3ewjx5r" path="res://assets/tile sets/GandalfHardcore FREE Platformer Assets/Weeping Willow3.png" id="1_8vr3t"]
 [ext_resource type="Texture2D" uid="uid://cw6uekrfsbejl" path="res://assets/tile sets/GandalfHardcore FREE Platformer Assets/Tree1.png" id="1_26h77"]
@@ -22,12 +22,16 @@
 [ext_resource type="Texture2D" uid="uid://bnc6frjfb84u7" path="res://assets/Parallax_Backgrounds_Plains/2.png" id="13_aacai"]
 [ext_resource type="Texture2D" uid="uid://ddm45mf1vl24r" path="res://assets/Parallax_Backgrounds_Plains/1.png" id="14_pggb5"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="19_mlk23"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="21_ddx28"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://gameEngine/portal.gd" id="23_00dlp"]
 [ext_resource type="PackedScene" uid="uid://dm7hga30x6obk" path="res://scenes/sandworm.tscn" id="23_b36k0"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="24_mlk23"]
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="25_aacai"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="26_pggb5"]
 [ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="27_pggb5"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="27_pqyxy"]
 [ext_resource type="AudioStream" uid="uid://d4dp3m50umc4u" path="res://assets/music/lvl/prime-facts7-nature-sound-mornings-291488.mp3" id="28_idjb0"]
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://gameEngine/hud.gd" id="30_yf8q3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_idjb0"]
 texture = ExtResource("1_r02ll")
@@ -934,9 +938,11 @@ layer_0/tile_data = PackedInt32Array(1, 65537, 0, 2, 65537, 0, 3, 65537, 0, 4, 6
 
 [node name="Key" parent="." instance=ExtResource("9_gci8k")]
 position = Vector2(-462, 280)
+script = ExtResource("21_ddx28")
 
 [node name="Portal" parent="." instance=ExtResource("10_gder6")]
 position = Vector2(1607, 445)
+script = ExtResource("23_00dlp")
 
 [node name="Label" parent="." instance=ExtResource("12_ij65d")]
 visible = false
@@ -949,6 +955,7 @@ offset_bottom = 250.0
 position = Vector2(399, 336)
 
 [node name="Killzone" parent="sandworm" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm/Killzone"]
 position = Vector2(-1, 12)
@@ -958,6 +965,7 @@ shape = SubResource("RectangleShape2D_mlk23")
 position = Vector2(433, 336)
 
 [node name="Killzone" parent="sandworm2" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm2/Killzone"]
 position = Vector2(0, 12)
@@ -967,6 +975,7 @@ shape = SubResource("RectangleShape2D_mlk23")
 position = Vector2(47, 496)
 
 [node name="Killzone" parent="sandworm3" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm3/Killzone"]
 position = Vector2(0, 3.6875)
@@ -985,6 +994,7 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+script = ExtResource("30_yf8q3")
 
 [node name="Label3" type="Label" parent="."]
 offset_left = 638.0
@@ -1026,6 +1036,7 @@ shape = SubResource("RectangleShape2D_mlk23")
 position = Vector2(622, 561)
 
 [node name="Killzone" parent="sandworm6" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm6/Killzone"]
 position = Vector2(0, 3.6875)
@@ -1040,6 +1051,7 @@ bus = &"BGM"
 position = Vector2(910, 336)
 
 [node name="Killzone" parent="sandworm7" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm7/Killzone"]
 position = Vector2(0, 3.6875)
@@ -1049,6 +1061,7 @@ shape = SubResource("RectangleShape2D_mlk23")
 position = Vector2(793, 336)
 
 [node name="Killzone" parent="sandworm8" instance=ExtResource("24_mlk23")]
+script = ExtResource("27_pqyxy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sandworm8/Killzone"]
 position = Vector2(0, 3.6875)

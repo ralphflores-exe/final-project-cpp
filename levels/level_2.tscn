@@ -1,17 +1,20 @@
-[gd_scene load_steps=34 format=3 uid="uid://dw1t1ptrec4b4"]
+[gd_scene load_steps=37 format=3 uid="uid://dw1t1ptrec4b4"]
 
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_qeqk5"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_1soli"]
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://gameEngine/hud.gd" id="2_5yfph"]
 [ext_resource type="Texture2D" uid="uid://pgb63xhyesvf" path="res://assets/tile sets/Factory/Saw.png" id="3_4pbjs"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="4_lmqi1"]
 [ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="6_w6yvm"]
-[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="7_jcvcn"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_0ttnk"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="8_w6yvm"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="9_v3vm6"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="10_16yl7"]
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="11_3slvs"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="11_jcvcn"]
 [ext_resource type="AudioStream" uid="uid://brmujris3y5ck" path="res://assets/music/lvl/chill-drum-loop-6887.mp3" id="12_1soli"]
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="12_4pbjs"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://gameEngine/portal.gd" id="13_0ttnk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahc55"]
 texture = ExtResource("2_1soli")
@@ -253,6 +256,7 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+script = ExtResource("2_5yfph")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xqsqx")
@@ -271,16 +275,16 @@ position = Vector2(1, -14)
 zoom = Vector2(3, 3)
 limit_left = -71
 limit_top = -71
-limit_right = 1001
+limit_right = 998
 limit_bottom = 578
 limit_smoothed = true
 
 [node name="Saw Sprite" parent="." instance=ExtResource("6_w6yvm")]
 position = Vector2(180, 12)
 rotation = 2.7367008
-script = ExtResource("7_jcvcn")
 
 [node name="Killzone" parent="Saw Sprite" instance=ExtResource("8_0ttnk")]
+script = ExtResource("8_w6yvm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Saw Sprite/Killzone"]
 shape = SubResource("CircleShape2D_lch5u")
@@ -290,9 +294,9 @@ position = Vector2(605, 291.93903)
 rotation = 0.062177368
 scale = Vector2(1.1613166, 1.167997)
 skew = -0.00071287155
-script = ExtResource("7_jcvcn")
 
 [node name="Killzone" parent="Saw Sprite2" instance=ExtResource("8_0ttnk")]
+script = ExtResource("8_w6yvm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Saw Sprite2/Killzone"]
 shape = SubResource("CircleShape2D_lch5u")
@@ -324,9 +328,11 @@ offset_bottom = 377.0
 
 [node name="Key" parent="." instance=ExtResource("10_16yl7")]
 position = Vector2(521, 378)
+script = ExtResource("11_jcvcn")
 
 [node name="Killzone" parent="." instance=ExtResource("8_0ttnk")]
 position = Vector2(114, 203)
+script = ExtResource("8_w6yvm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(5.5, 2.5)
@@ -397,6 +403,7 @@ shape = SubResource("RectangleShape2D_x0vd5")
 
 [node name="Portal" parent="." instance=ExtResource("11_3slvs")]
 position = Vector2(952, 245)
+script = ExtResource("13_0ttnk")
 
 [node name="Saw2" type="Path2D" parent="."]
 position = Vector2(-119.64554, -46.554543)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=61 format=3 uid="uid://bi2f26jkngbvn"]
+[gd_scene load_steps=65 format=3 uid="uid://bi2f26jkngbvn"]
 
 [ext_resource type="Texture2D" uid="uid://bs3vvunhcf3ss" path="res://assets/tile sets/PowerStation/Tileset.png" id="1_b15rf"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_dmnu2"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_s4mq8"]
 [ext_resource type="Texture2D" uid="uid://qhbkb6o47pwj" path="res://assets/tile sets/PowerStation/Day/1.png" id="3_0fd8o"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="3_cmohj"]
 [ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tileset.png" id="3_sc6c1"]
 [ext_resource type="Texture2D" uid="uid://cpcvpwo5kto62" path="res://assets/tile sets/PowerStation/Day/2.png" id="4_dmnu2"]
 [ext_resource type="Texture2D" uid="uid://f0u3e1tn13fa" path="res://assets/tile sets/PowerStation/Day/3.png" id="5_sc6c1"]
@@ -15,9 +16,12 @@
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="14_8mt0c"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="14_vru0x"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="15_5oqfd"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="15_bv8dl"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="16_8mt0c"]
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="17_dp2yl"]
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://gameEngine/hud.gd" id="17_uhmd0"]
 [ext_resource type="AudioStream" uid="uid://d0i8fmf60nyok" path="res://assets/music/lvl/bgm-factory.mp3" id="18_a7qdg"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://gameEngine/portal.gd" id="19_8c4vb"]
 
 [sub_resource type="Animation" id="Animation_3ff1r"]
 length = 0.001
@@ -794,6 +798,7 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="Killzone" parent="Saw" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Saw/Killzone"]
 shape = SubResource("CircleShape2D_5oqfd")
@@ -865,6 +870,7 @@ z_index = 4008
 position = Vector2(347, -119)
 
 [node name="Killzone" parent="ElecTrap" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ElecTrap/Killzone"]
 position = Vector2(0, -7)
@@ -875,6 +881,7 @@ position = Vector2(-17, -546)
 
 [node name="Killzone" parent="ElecTrap/eletrap" instance=ExtResource("12_8hlpj")]
 position = Vector2(-1, 0)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ElecTrap/eletrap/Killzone"]
 position = Vector2(2.5, -16)
@@ -884,6 +891,7 @@ shape = SubResource("RectangleShape2D_5oqfd")
 position = Vector2(119, -547)
 
 [node name="Killzone" parent="ElecTrap/eletrap2" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ElecTrap/eletrap2/Killzone"]
 position = Vector2(0, -7)
@@ -894,6 +902,7 @@ z_index = 1315
 position = Vector2(628, -436)
 
 [node name="Killzone" parent="ElecTrap/electrap" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ElecTrap/electrap/Killzone"]
 position = Vector2(0, -7)
@@ -903,6 +912,7 @@ shape = SubResource("RectangleShape2D_dp2yl")
 position = Vector2(397, -531)
 
 [node name="Killzone" parent="ElecTrap/electrap2" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ElecTrap/electrap2/Killzone"]
 position = Vector2(0, -7)
@@ -910,6 +920,7 @@ shape = SubResource("RectangleShape2D_a7qdg")
 
 [node name="Key" parent="." instance=ExtResource("14_vru0x")]
 position = Vector2(400, -674)
+script = ExtResource("15_bv8dl")
 
 [node name="drone" parent="." instance=ExtResource("13_qhnv2")]
 z_index = 1455
@@ -934,6 +945,7 @@ autoplay = "RESET"
 position = Vector2(1248, -296)
 
 [node name="Killzone" parent="saw" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="saw/Killzone"]
 shape = SubResource("CircleShape2D_8mt0c")
@@ -954,6 +966,7 @@ libraries = {
 autoplay = "new_animation"
 
 [node name="Killzone" parent="saw2" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="saw2/Killzone"]
 shape = SubResource("CircleShape2D_dp2yl")
@@ -963,6 +976,7 @@ position = Vector2(1670, -186)
 
 [node name="Killzone" parent="eletrap" instance=ExtResource("12_8hlpj")]
 position = Vector2(-1804, -59)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="eletrap/Killzone"]
 position = Vector2(1804, 52)
@@ -972,6 +986,7 @@ shape = SubResource("RectangleShape2D_0bers")
 position = Vector2(2546, -136)
 
 [node name="Killzone" parent="eltrap" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="eltrap/Killzone"]
 position = Vector2(0, -6.5)
@@ -981,6 +996,7 @@ shape = SubResource("RectangleShape2D_27cb5")
 position = Vector2(2399, -56)
 
 [node name="Killzone" parent="eltra" instance=ExtResource("12_8hlpj")]
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="eltra/Killzone"]
 position = Vector2(0, -6)
@@ -988,6 +1004,7 @@ shape = SubResource("RectangleShape2D_g1ha7")
 
 [node name="Killzone" parent="." instance=ExtResource("12_8hlpj")]
 position = Vector2(-40.84424, -34)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(129.84424, 5)
@@ -995,6 +1012,7 @@ shape = SubResource("RectangleShape2D_52a3b")
 
 [node name="Killzone2" parent="." instance=ExtResource("12_8hlpj")]
 position = Vector2(176, -68)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone2"]
 position = Vector2(-1, 7)
@@ -1002,6 +1020,7 @@ shape = SubResource("RectangleShape2D_3ff1r")
 
 [node name="Killzone" parent="Killzone2" instance=ExtResource("12_8hlpj")]
 position = Vector2(424, -65)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone2/Killzone"]
 position = Vector2(1, 4)
@@ -1009,6 +1028,7 @@ shape = SubResource("RectangleShape2D_cmohj")
 
 [node name="Killzone2" parent="Killzone2" instance=ExtResource("12_8hlpj")]
 position = Vector2(525, -96)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone2/Killzone2"]
 position = Vector2(3, 1)
@@ -1016,6 +1036,7 @@ shape = SubResource("RectangleShape2D_bv8dl")
 
 [node name="Killzone3" parent="." instance=ExtResource("12_8hlpj")]
 position = Vector2(860, -550)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3"]
 position = Vector2(4, 5)
@@ -1023,6 +1044,7 @@ shape = SubResource("RectangleShape2D_uhmd0")
 
 [node name="Killzone" parent="Killzone3" instance=ExtResource("12_8hlpj")]
 position = Vector2(-198, 2)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3/Killzone"]
 position = Vector2(10.5, 3)
@@ -1030,6 +1052,7 @@ shape = SubResource("RectangleShape2D_8c4vb")
 
 [node name="Killzone2" parent="Killzone3" instance=ExtResource("12_8hlpj")]
 position = Vector2(-279, 33)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3/Killzone2"]
 position = Vector2(10.5, 3)
@@ -1037,6 +1060,7 @@ shape = SubResource("RectangleShape2D_8c4vb")
 
 [node name="Killzone4" parent="Killzone3" instance=ExtResource("12_8hlpj")]
 position = Vector2(-368, -32)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3/Killzone4"]
 position = Vector2(13, 4)
@@ -1044,6 +1068,7 @@ shape = SubResource("RectangleShape2D_gu0mu")
 
 [node name="Killzone3" parent="Killzone3" instance=ExtResource("12_8hlpj")]
 position = Vector2(644, 498)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3/Killzone3"]
 position = Vector2(8, 3)
@@ -1051,6 +1076,7 @@ shape = SubResource("RectangleShape2D_25iwj")
 
 [node name="Killzone4" parent="." instance=ExtResource("12_8hlpj")]
 position = Vector2(2043, 160)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone4"]
 position = Vector2(-1, -124)
@@ -1063,9 +1089,11 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+script = ExtResource("17_uhmd0")
 
 [node name="Killzone5" parent="." instance=ExtResource("12_8hlpj")]
 position = Vector2(2043, 160)
+script = ExtResource("3_cmohj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone5"]
 position = Vector2(779, -258)
@@ -1073,6 +1101,7 @@ shape = SubResource("RectangleShape2D_kiqbd")
 
 [node name="Portal" parent="." instance=ExtResource("14_8mt0c")]
 position = Vector2(2593, -158)
+script = ExtResource("19_8c4vb")
 
 [node name="spawn" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_dp2yl")

@@ -1,16 +1,20 @@
-[gd_scene load_steps=15 format=3 uid="uid://bu1ifdhwf460x"]
+[gd_scene load_steps=19 format=3 uid="uid://bu1ifdhwf460x"]
 
-[ext_resource type="Script" uid="uid://dk8y2puq701md" path="res://gameEngine/level_1.gd" id="1_62b6n"]
+[ext_resource type="Script" uid="uid://dk8y2puq701md" path="res://gameEngine/level_1.gd" id="1_34erp"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="1_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="2_f4pg2"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="3_62b6n"]
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://gameEngine/hud.gd" id="3_k2bse"]
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="5_lk57d"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="6_2hkqn"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="7_34erp"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://gameEngine/portal.gd" id="7_c7pbv"]
 [ext_resource type="FontFile" uid="uid://u6qaq8rqqvxy" path="res://assets/fonts/PixelOperator8.ttf" id="8_k2bse"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="9_77l7m"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="9_c7pbv"]
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="10_62b6n"]
 [ext_resource type="AudioStream" uid="uid://c4ge8ntjt8dm2" path="res://assets/music/lvl/time_for_adventure.mp3" id="10_f4pg2"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="11_1rr3k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhr6a"]
 texture = ExtResource("2_f4pg2")
@@ -98,7 +102,7 @@ sources/0 = SubResource("TileSetAtlasSource_vhr6a")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cnc74"]
 
 [node name="Level 1" type="Node2D"]
-script = ExtResource("1_62b6n")
+script = ExtResource("1_34erp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -107,6 +111,7 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+script = ExtResource("3_k2bse")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(195, -114)
@@ -122,11 +127,14 @@ position = Vector2(50, -66)
 
 [node name="Portal" parent="." instance=ExtResource("5_lk57d")]
 position = Vector2(314, -160)
+script = ExtResource("7_c7pbv")
 
 [node name="Key" parent="." instance=ExtResource("6_2hkqn")]
 position = Vector2(68, -133)
+script = ExtResource("9_77l7m")
 
 [node name="Killzone" parent="." instance=ExtResource("7_34erp")]
+script = ExtResource("11_1rr3k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(298, -23)

@@ -1,18 +1,22 @@
-[gd_scene load_steps=39 format=3 uid="uid://bv7lkdkl8wft7"]
+[gd_scene load_steps=43 format=3 uid="uid://bv7lkdkl8wft7"]
 
 [ext_resource type="Texture2D" uid="uid://bfrb4l500ort4" path="res://assets/tile sets/Factory/Tileset.png" id="1_cb8d3"]
 [ext_resource type="Texture2D" uid="uid://7swe1rubmn2o" path="res://assets/tile sets/Cave/tileset16x16.png" id="1_uwxw1"]
 [ext_resource type="PackedScene" uid="uid://c64apnm77bvxd" path="res://scenes/player.tscn" id="2_5lru4"]
+[ext_resource type="Script" uid="uid://d4m4qvxkgcu7e" path="res://gameEngine/key.gd" id="4_wtqdv"]
 [ext_resource type="PackedScene" uid="uid://bjgvrtwbjs0fm" path="res://scenes/platform.tscn" id="5_padch"]
 [ext_resource type="Texture2D" uid="uid://1qqvkpl2q5k6" path="res://assets/tile sets/Factory/Background.png" id="6_2urlj"]
 [ext_resource type="PackedScene" uid="uid://yx1n8vnvi1k0" path="res://scenes/key.tscn" id="7_ay5qi"]
 [ext_resource type="PackedScene" uid="uid://cx2kpnblfwop8" path="res://scenes/killzone.tscn" id="8_fa81k"]
+[ext_resource type="Script" uid="uid://cptpxyxfwrxf0" path="res://gameEngine/killzone.gd" id="9_1yi2b"]
 [ext_resource type="PackedScene" uid="uid://duvrs3h02qb51" path="res://scenes/portal.tscn" id="9_trpa2"]
 [ext_resource type="PackedScene" uid="uid://bx8xedd4abeif" path="res://scenes/saw2.tscn" id="10_4t7ew"]
 [ext_resource type="PackedScene" uid="uid://dsyehxyfkjtj0" path="res://scenes/label.tscn" id="11_4t7ew"]
 [ext_resource type="AudioStream" uid="uid://dewpy8m1tfm6p" path="res://assets/music/lvl/runaway-industrial-train-336271.mp3" id="11_7cdb2"]
+[ext_resource type="Script" uid="uid://bc0awhjbnuahy" path="res://gameEngine/portal.gd" id="11_462h2"]
 [ext_resource type="PackedScene" uid="uid://sc4mhb5dfxri" path="res://scenes/hud.tscn" id="12_7cdb2"]
 [ext_resource type="AudioStream" uid="uid://43pjowo324g6" path="res://assets/audio/rezero_respawn.mp3" id="13_7cdb2"]
+[ext_resource type="Script" uid="uid://o6p6u4o1c830" path="res://gameEngine/hud.gd" id="16_pmssq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay5qi"]
 texture = ExtResource("1_uwxw1")
@@ -459,6 +463,7 @@ layer_1/name = "Background"
 
 [node name="Key" parent="." instance=ExtResource("7_ay5qi")]
 position = Vector2(21, -447)
+script = ExtResource("4_wtqdv")
 
 [node name="Player" parent="." instance=ExtResource("2_5lru4")]
 position = Vector2(69, -109)
@@ -497,6 +502,7 @@ autoplay = "move"
 
 [node name="Killzone" parent="." instance=ExtResource("8_fa81k")]
 position = Vector2(250, -412)
+script = ExtResource("9_1yi2b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-2, 7.5)
@@ -560,6 +566,7 @@ shape = SubResource("RectangleShape2D_5wr1k")
 
 [node name="Portal" parent="." instance=ExtResource("9_trpa2")]
 position = Vector2(1336, -130)
+script = ExtResource("11_462h2")
 
 [node name="Drone 3" parent="." instance=ExtResource("5_padch")]
 position = Vector2(1391, 14)
@@ -616,6 +623,7 @@ offset_left = 5.0
 offset_top = 5.0
 offset_right = 5.0
 offset_bottom = 5.0
+script = ExtResource("16_pmssq")
 
 [node name="spawn" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("13_7cdb2")
